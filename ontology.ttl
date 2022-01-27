@@ -1,0 +1,19 @@
+@prefix : <https://w3id.org/apn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/apn#> .
+
+<https://w3id.org/apn#> rdf:type owl:Ontology ;
+    dcterms:creator "Beatriz Esteves" ,
+        "Kieran Fraser" ,
+        "Shridhar Kulkarni" ;
+    dcterms:issued "2021-11-15"^^xsd:date ;
+    dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:title "Ontology for the Annotation of Push-Notifications"@en ;
+    vann:preferredNamespacePrefix "apn:" ;
+    owl:versionInfo "0.0.1" .
