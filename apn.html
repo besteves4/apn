@@ -818,8 +818,8 @@
         </tr>
         <tr>
           <td colspan=2 class="table-cell">
-<!--             The purpose of this profile of ODRL is to support policies 
-            determining the access control to personal data stored in Solid Pods. -->
+            The purpose of this ontology is to support the annotation and extraction of insights
+            from push-notification data.
           </td>
         </tr>
         <tr>
@@ -829,13 +829,14 @@
         </tr>
         <tr>
           <td colspan=2 class="table-cell">
-<!--             The scope of this profile is limited to the definition of an ODRL Profile 
-            for Access Control in Solid. In particular, the introduced elements will 
-            serve one of these purposes: (i) define actions supporting enforcement 
-            of current ACL verbs, (ii) define data protection-related actions and restrictions 
-            defined in GDPR, (iii) any vocabulary element to support policy patterns that can 
-            be anticipated to be common, and (iv) elements necessary to support the authorization 
-            reasoning decision. -->
+            The scope of this ontology is limited to the definition of a set of parameters 
+            that can be used to classify push-notification data, in particular its text content, 
+            with the end goal of creating a service which pushes more empathethic content to 
+            push-notification subscribers. Specifically, the notification content will be used
+            to categorize the notification in terms of: (i) its spec'ific call-to-action, 
+            (ii) and respective marketing campaign type, (iii) its target audience, (iv) its time
+            sensitiveness and (v) the presence of information that can be used 
+            to infer personal data from the subscribers.
           </td>
         </tr>
         <tr>
@@ -845,7 +846,7 @@
         </tr>
         <tr>
           <td colspan=2 class="table-cell">
-            OWL
+            RDF
           </td>
         </tr>
         <tr>
@@ -855,7 +856,8 @@
         </tr>
         <tr>
           <td colspan=2 class="table-cell">
-            <!-- Developers of Solid servers and Solid clients. -->
+            Organizations with Web or application services which include push-notifications
+            in their communication flow with customers.
           </td>
         </tr>
         <tr>
@@ -865,10 +867,8 @@
         </tr>
         <tr>
           <td colspan=2 class="table-cell">
-<!--             Use 1. Declaration of a policy by an individual storing personal data in a Pod.<br>
-            Use 2. Request of data made by a person or application to gain access to the data in different modalities.<br>
-            Use 3. Contextual elements to be considered in the authorization decision.<br>
-            Use 4. Explanation of the authorization decision. -->
+            Use 1. Creation of multi-label classification models to automatically annotate push-notifications.<br>
+            Use 2. Generation of push-notification content based on annotations' model.
           </td>
         </tr>
         <tr>
@@ -888,28 +888,29 @@
         </tr>
         <tr>
           <th colspan=2 class="table-title">
-            b. Functional Requirements: Groups of Competency Question
+            b. Functional Requirements: Groups of Competency Questions
           </th>
         </tr>
         <tr>
           <th class="table-title">
-            <!-- CQG1. Related to authorization -->
+            CQG1. Related to push-notification services
           </th>
           <th class="table-title">
-            <!-- CQG2. Related to GDPR -->
+            CQG2. Related to push-notification categorization
           </th>
         </tr>
         <tr>
           <td class="table-cell">
-<!--             CQ1. Which actions are to be authorized?<br>
-            CQ2. Which requirements are to be authorized?<br>
-            CQ3. Who are the parties intervening in policy?<br>
-            CQ4. Which is the priority of a certain policy?<br>
-            CQ5. Which are the contextual elements to be considered in the authorization decision? -->
+            CQ1. What is the content of the push-notification?<br>
+            CQ2. Which service / application pushed the notification?<br>
+            CQ3. What is the application type in relation to its content?
           </td>
           <td class="table-cell">
-<!--             CQ6. Which obligations and requirements, and information about personal data and its processing are necessary?<br>
-            CQ7. Which is the legal identification of the policy parties? -->
+            CQ4. What is the call-to-action (CTA) of the notification?<br>
+            CQ5. Does the notification belong to a specific campaign type?<br>
+            CQ6. How urgent is the notification?<br>
+            CQ7. Does the notification have a clear target audience?<br>
+            CQ8. Does the notification contain features which indicate personalization?
           </td>
         </tr>
       </table>
