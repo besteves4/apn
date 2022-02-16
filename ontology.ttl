@@ -1,19 +1,479 @@
-@prefix : <https://w3id.org/apn#> .
+ @prefix apn: <https://w3id.org/apn/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dpv: <http://www.w3.org/ns/dpv#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/apn#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/apn#> rdf:type owl:Ontology ;
-    dcterms:creator "Beatriz Esteves" ,
-        "Kieran Fraser" ,
+dpv:Age a owl:Class ;
+    rdfs:label "Age" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:Authenticating a owl:Class ;
+    rdfs:label "Authenticating" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:BrowsingBehavior a owl:Class ;
+    rdfs:label "Browsing Behavior" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:DeviceBased a owl:Class ;
+    rdfs:label "Device Based" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:EthnicOrigin a owl:Class ;
+    rdfs:label "Ethnic Origin" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:FamilyStructure a owl:Class ;
+    rdfs:label "Family Structure" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:Interest a owl:Class ;
+    rdfs:label "Interest" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:Location a owl:Class ;
+    rdfs:label "Location" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:MedicalHealth a owl:Class ;
+    rdfs:label "Medical Health" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:PoliticalAffiliation a owl:Class ;
+    rdfs:label "Political Affiliation" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:Professional a owl:Class ;
+    rdfs:label "Professional" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:PurchasesAndSpendingHabit a owl:Class ;
+    rdfs:label "Purchases And Spending Habit" ;
+    rdfs:subClassOf apn:Personalisation .
+
+dpv:SocialNetwork a owl:Class ;
+    rdfs:label "Social Network" ;
+    rdfs:subClassOf apn:Personalisation .
+
+apn: a owl:Ontology ;
+    dc:creator "Beatriz Esteves",
+        "Kieran Fraser",
         "Shridhar Kulkarni" ;
-    dcterms:issued "2021-11-15"^^xsd:date ;
-    dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:title "Ontology for the Annotation of Push-Notifications"@en ;
+    dc:issued "2022-02-16"^^xsd:date ;
+    dc:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    dc:title "Ontology for the Annotation of Push-Notifications" ;
     vann:preferredNamespacePrefix "apn:" ;
-    owl:versionInfo "0.0.1" .
+    owl:versionInfo "0.1" .
+
+apn:AccountManagement a owl:Class ;
+    rdfs:label "Account Management" ;
+    rdfs:subClassOf apn:CallToAction .
+
+apn:ArtAndDesign a owl:Class ;
+    rdfs:label "Art And Design" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Awareness a owl:Class ;
+    rdfs:label "Awareness" ;
+    rdfs:subClassOf apn:CallToAction .
+
+apn:Beauty a owl:Class ;
+    rdfs:label "Beauty" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:BooksAndReference a owl:Class ;
+    rdfs:label "Books And Reference" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Business a owl:Class ;
+    rdfs:label "Business" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:CT_Awareness a owl:Class ;
+    rdfs:label "C T_ Awareness" ;
+    rdfs:subClassOf apn:CampaignType .
+
+apn:CT_BreakingContent a owl:Class ;
+    rdfs:label "C T_ Breaking Content" ;
+    rdfs:subClassOf apn:CampaignType .
+
+apn:CT_HelpFeedbackTips a owl:Class ;
+    rdfs:label "C T_ Help Feedback Tips" ;
+    rdfs:subClassOf apn:CampaignType .
+
+apn:CT_Loyalty a owl:Class ;
+    rdfs:label "C T_ Loyalty" ;
+    rdfs:subClassOf apn:CampaignType .
+
+apn:CT_Newsletter a owl:Class ;
+    rdfs:label "C T_ Newsletter" ;
+    rdfs:subClassOf apn:CampaignType .
+
+apn:CT_Onboarding a owl:Class ;
+    rdfs:label "C T_ Onboarding" ;
+    rdfs:subClassOf apn:CampaignType .
+
+apn:CT_Product a owl:Class ;
+    rdfs:label "C T_ Product" ;
+    rdfs:subClassOf apn:CampaignType .
+
+apn:CT_PromotionalFlash a owl:Class ;
+    rdfs:label "C T_ Promotional Flash" ;
+    rdfs:subClassOf apn:CT_Promotional .
+
+apn:CT_PromotionalGeneral a owl:Class ;
+    rdfs:label "C T_ Promotional General" ;
+    rdfs:subClassOf apn:CT_Promotional .
+
+apn:CT_PromotionalRare a owl:Class ;
+    rdfs:label "C T_ Promotional Rare" ;
+    rdfs:subClassOf apn:CT_Promotional .
+
+apn:CT_Reengagement a owl:Class ;
+    rdfs:label "C T_ Reengagement" ;
+    rdfs:subClassOf apn:CampaignType .
+
+apn:CT_Social a owl:Class ;
+    rdfs:label "C T_ Social" ;
+    rdfs:subClassOf apn:CampaignType .
+
+apn:Claim a owl:Class ;
+    rdfs:label "Claim" ;
+    rdfs:subClassOf apn:CallToAction .
+
+apn:Comics a owl:Class ;
+    rdfs:label "Comics" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Communication a owl:Class ;
+    rdfs:label "Communication" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Country a owl:Class ;
+    rdfs:label "Country" ;
+    rdfs:subClassOf apn:Geographic .
+
+apn:Discover a owl:Class ;
+    rdfs:label "Discover" ;
+    rdfs:subClassOf apn:CallToAction .
+
+apn:Download a owl:Class ;
+    rdfs:label "Download" ;
+    rdfs:subClassOf apn:CallToAction .
+
+apn:Education a owl:Class ;
+    rdfs:label "Education" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Engagement a owl:Class ;
+    rdfs:label "Engagement" ;
+    rdfs:subClassOf apn:Behavior .
+
+apn:Entertainment a owl:Class ;
+    rdfs:label "Entertainment" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Events a owl:Class ;
+    rdfs:label "Events" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:FamilyStatus a owl:Class ;
+    rdfs:label "Family Status" ;
+    rdfs:subClassOf apn:Demographic .
+
+apn:Feedback a owl:Class ;
+    rdfs:label "Feedback" ;
+    rdfs:subClassOf apn:CallToAction .
+
+apn:Finance a owl:Class ;
+    rdfs:label "Finance" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:FoodAndDrink a owl:Class ;
+    rdfs:label "Food And Drink" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Games a owl:Class ;
+    rdfs:label "Games" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Health a owl:Class ;
+    rdfs:label "Health" ;
+    rdfs:subClassOf apn:Demographic .
+
+apn:HealthAndFitness a owl:Class ;
+    rdfs:label "Health And Fitness" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Holidays a owl:Class ;
+    rdfs:label "Holidays" ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:Interest a owl:Class ;
+    rdfs:label "Interest" ;
+    rdfs:subClassOf apn:Psychographic .
+
+apn:Job a owl:Class ;
+    rdfs:label "Job" ;
+    rdfs:subClassOf apn:Demographic .
+
+apn:Lifestyle a owl:Class ;
+    rdfs:label "Lifestyle" ;
+    rdfs:subClassOf apn:ApplicationType,
+        apn:Psychographic .
+
+apn:Loyalty a owl:Class ;
+    rdfs:label "Loyalty" ;
+    rdfs:subClassOf apn:Behavior .
+
+apn:MapsAndNavigation a owl:Class ;
+    rdfs:label "Maps And Navigation" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Medical a owl:Class ;
+    rdfs:label "Medical" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Motivation a owl:Class ;
+    rdfs:label "Motivation" ;
+    rdfs:subClassOf apn:Psychographic .
+
+apn:MusicAndAudio a owl:Class ;
+    rdfs:label "Music And Audio" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:NextDays a owl:Class ;
+    rdfs:label "Next Days" ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:NextHours a owl:Class ;
+    rdfs:label "Next Hours" ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:NextMinutes a owl:Class ;
+    rdfs:label "Next Minutes" ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:NextMonths a owl:Class ;
+    rdfs:label "Next Months" ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:NextWeeks a owl:Class ;
+    rdfs:label "Next Weeks" ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:NextYears a owl:Class ;
+    rdfs:label "Next Years" ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:Occasion a owl:Class ;
+    rdfs:label "Occasion" ;
+    rdfs:subClassOf apn:Behavior .
+
+apn:PersonalMotivations a owl:Class ;
+    rdfs:label "Personal Motivations" ;
+    rdfs:subClassOf apn:Personalisation .
+
+apn:Play a owl:Class ;
+    rdfs:label "Play" ;
+    rdfs:subClassOf apn:CallToAction .
+
+apn:Product a owl:Class ;
+    rdfs:label "Product" ;
+    rdfs:subClassOf apn:Behavior .
+
+apn:Productivity a owl:Class ;
+    rdfs:label "Productivity" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Purchase a owl:Class ;
+    rdfs:label "Purchase" ;
+    rdfs:subClassOf apn:CallToAction .
+
+apn:PurchasingReason a owl:Class ;
+    rdfs:label "Purchasing Reason" ;
+    rdfs:subClassOf apn:Behavior .
+
+apn:Region a owl:Class ;
+    rdfs:label "Region" ;
+    rdfs:subClassOf apn:Geographic .
+
+apn:Reminder a owl:Class ;
+    rdfs:label "Reminder" ;
+    rdfs:subClassOf apn:CallToAction .
+
+apn:Residence a owl:Class ;
+    rdfs:label "Residence" ;
+    rdfs:subClassOf apn:Demographic .
+
+apn:Seasons a owl:Class ;
+    rdfs:label "Seasons" ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:Shopping a owl:Class ;
+    rdfs:label "Shopping" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Social a owl:Class ;
+    rdfs:label "Social" ;
+    rdfs:subClassOf apn:ApplicationType,
+        apn:CallToAction .
+
+apn:Sports a owl:Class ;
+    rdfs:label "Sports" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:TravelAndLocal a owl:Class ;
+    rdfs:label "Travel And Local" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Unclear a owl:Class ;
+    rdfs:label "Unclear" ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:VideoPlayersAndEditors a owl:Class ;
+    rdfs:label "Video Players And Editors" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Watch a owl:Class ;
+    rdfs:label "Watch" ;
+    rdfs:subClassOf apn:CallToAction .
+
+apn:Weather a owl:Class ;
+    rdfs:label "Weather" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:accountCreated a owl:DatatypeProperty ;
+    rdfs:label "account created" ;
+    rdfs:range xsd:boolean .
+
+apn:appName a owl:DatatypeProperty ;
+    rdfs:label "app name" ;
+    rdfs:range xsd:string .
+
+apn:canBeUsedToInfer a owl:ObjectProperty ;
+    rdfs:label "can be used to infer" ;
+    rdfs:domain apn:PushNotification ;
+    rdfs:range apn:Personalisation .
+
+apn:hasAppType a owl:ObjectProperty ;
+    rdfs:label "has app type" ;
+    rdfs:domain apn:Application ;
+    rdfs:range apn:ApplicationType .
+
+apn:hasCTA a owl:ObjectProperty ;
+    rdfs:label "has c t a" ;
+    rdfs:domain apn:PushNotification ;
+    rdfs:range apn:CallToAction .
+
+apn:hasCampaignType a owl:ObjectProperty ;
+    rdfs:label "has campaign type" ;
+    rdfs:domain apn:PushNotification ;
+    rdfs:range apn:CampaignType .
+
+apn:hasTargetAudience a owl:ObjectProperty ;
+    rdfs:label "has target audience" ;
+    rdfs:domain apn:PushNotification ;
+    rdfs:range apn:TargetAudience .
+
+apn:inAppPurchases a owl:DatatypeProperty ;
+    rdfs:label "in app purchases" ;
+    rdfs:range xsd:boolean .
+
+apn:installDate a owl:DatatypeProperty ;
+    rdfs:label "install date" ;
+    rdfs:range xsd:dateTime .
+
+apn:isTimeSensitive a owl:DatatypeProperty ;
+    rdfs:label "is time sensitive" ;
+    rdfs:range xsd:boolean .
+
+apn:notificationID a owl:DatatypeProperty ;
+    rdfs:label "notification i d" ;
+    rdfs:range xsd:integer .
+
+apn:notificationText a owl:DatatypeProperty ;
+    rdfs:label "notification text" ;
+    rdfs:range xsd:string .
+
+apn:numberOfDownloads a owl:DatatypeProperty ;
+    rdfs:label "number of downloads" ;
+    rdfs:range xsd:integer .
+
+apn:numberOfReviews a owl:DatatypeProperty ;
+    rdfs:label "number of reviews" ;
+    rdfs:range xsd:integer .
+
+apn:pushedBy a owl:ObjectProperty ;
+    rdfs:label "pushed by" ;
+    rdfs:domain apn:PushNotification ;
+    rdfs:range apn:Application .
+
+apn:pushedOn a owl:DatatypeProperty ;
+    rdfs:label "pushed on" ;
+    rdfs:range xsd:dateTime .
+
+apn:remainsRelevant a owl:ObjectProperty ;
+    rdfs:label "remains relevant" ;
+    rdfs:domain apn:PushNotification ;
+    rdfs:range apn:Urgency .
+
+apn:requiresAccount a owl:DatatypeProperty ;
+    rdfs:label "requires account" ;
+    rdfs:range xsd:boolean .
+
+apn:sizeInMB a owl:DatatypeProperty ;
+    rdfs:label "size in m b" ;
+    rdfs:range xsd:float .
+
+apn:stars a owl:DatatypeProperty ;
+    rdfs:label "stars" ;
+    rdfs:range xsd:float .
+
+apn:Application a owl:Class ;
+    rdfs:label "Application" .
+
+apn:Geographic a owl:Class ;
+    rdfs:label "Geographic" ;
+    rdfs:subClassOf apn:TargetAudience .
+
+apn:CT_Promotional a owl:Class ;
+    rdfs:label "C T_ Promotional" ;
+    rdfs:subClassOf apn:CampaignType .
+
+apn:Psychographic a owl:Class ;
+    rdfs:label "Psychographic" ;
+    rdfs:subClassOf apn:TargetAudience .
+
+apn:Demographic a owl:Class ;
+    rdfs:label "Demographic" ;
+    rdfs:subClassOf apn:TargetAudience .
+
+apn:Behavior a owl:Class ;
+    rdfs:label "Behavior" ;
+    rdfs:subClassOf apn:TargetAudience .
+
+apn:TargetAudience a owl:Class ;
+    rdfs:label "Target Audience" .
+
+apn:PushNotification a owl:Class ;
+    rdfs:label "Push Notification" .
+
+apn:Urgency a owl:Class ;
+    rdfs:label "Urgency" .
+
+apn:CampaignType a owl:Class ;
+    rdfs:label "Campaign Type" .
+
+apn:CallToAction a owl:Class ;
+    rdfs:label "Call To Action" .
+
+apn:Personalisation a owl:Class ;
+    rdfs:label "Personalisation" .
+
+apn:ApplicationType a owl:Class ;
+    rdfs:label "Application Type" .
+
