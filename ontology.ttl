@@ -220,6 +220,10 @@ apn:Job a owl:Class ;
     rdfs:label "Job" ;
     rdfs:subClassOf apn:Demographic .
 
+apn:LibrariesAndDemo a owl:Class ;
+    rdfs:label "Libraries And Demo" ;
+    rdfs:subClassOf apn:ApplicationType .
+
 apn:Lifestyle a owl:Class ;
     rdfs:label "Lifestyle" ;
     rdfs:subClassOf apn:ApplicationType,
@@ -243,6 +247,10 @@ apn:Motivation a owl:Class ;
 
 apn:MusicAndAudio a owl:Class ;
     rdfs:label "Music And Audio" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:NewsAndMagazines a owl:Class ;
+    rdfs:label "News And Magazines" ;
     rdfs:subClassOf apn:ApplicationType .
 
 apn:NextDays a owl:Class ;
@@ -276,6 +284,10 @@ apn:Occasion a owl:Class ;
 apn:PersonalMotivations a owl:Class ;
     rdfs:label "Personal Motivations" ;
     rdfs:subClassOf apn:Personalisation .
+
+apn:Photography a owl:Class ;
+    rdfs:label "Photography" ;
+    rdfs:subClassOf apn:ApplicationType .
 
 apn:Play a owl:Class ;
     rdfs:label "Play" ;
@@ -326,6 +338,10 @@ apn:Sports a owl:Class ;
     rdfs:label "Sports" ;
     rdfs:subClassOf apn:ApplicationType .
 
+apn:Strategy a owl:Class ;
+    rdfs:label "Strategy" ;
+    rdfs:subClassOf apn:ApplicationType .
+
 apn:TravelAndLocal a owl:Class ;
     rdfs:label "Travel And Local" ;
     rdfs:subClassOf apn:ApplicationType .
@@ -342,8 +358,20 @@ apn:Watch a owl:Class ;
     rdfs:label "Watch" ;
     rdfs:subClassOf apn:CallToAction .
 
+apn:WatchApps a owl:Class ;
+    rdfs:label "Watch Apps" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:WatchFaces a owl:Class ;
+    rdfs:label "Watch Faces" ;
+    rdfs:subClassOf apn:ApplicationType .
+
 apn:Weather a owl:Class ;
     rdfs:label "Weather" ;
+    rdfs:subClassOf apn:ApplicationType .
+
+apn:Word a owl:Class ;
+    rdfs:label "Word" ;
     rdfs:subClassOf apn:ApplicationType .
 
 apn:accountCreated a owl:DatatypeProperty ;
