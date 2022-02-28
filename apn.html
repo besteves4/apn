@@ -108,6 +108,7 @@
     cite .bibref{font-style:normal}
     code{color:#c63501}
     th code{color:inherit}
+    .tab{padding-left:3em}
     a[href].orcid{padding-left:4px;padding-right:4px}
     a[href].orcid>svg{margin-bottom:-2px}
     .toc a,.tof a{text-decoration:none}
@@ -2489,7 +2490,19 @@
       <a class="self-link respec-offending-element" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#styles" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document"></a>
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x9-1-example"></a>
     </h3>
-    <div></div>
+    <div>
+      <p>
+        Example of Annotated Call-To-Action notification
+      </p>
+      <code>
+        :ex0 a apn:PushNotification ;<br>
+        <span class="tab">apn:hasCTA apn:Discover ;</span><br>
+        <span class="tab">apn:notificationID "1642770111733" ;</span><br>
+        <span class="tab">apn:notificationText "Your Daily Pick is ready! 🥰The elephant in the room is that daily life and trauma can be reasons our sexual feelings fall flat Today's selection takes a therapeutic approach to how to bring the glow back" ;</span><br>
+        <span class="tab">apn:pushedBy :app_Blinkist ;</span><br>
+        <span class="tab">apn:pushedOn "2022-01-21 13:01:52"^^xsd:datetime .</span>
+      </code>
+    </div>
   </section>
 
 <section id="references" class="appendix"><!--OddPage--><h2 id="a-references"><bdi class="secno">A.<!---0.910070%--> </bdi>References<!---0.910070%--><a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/odrl-access-control-profile/oac.html#references"></a></h2><section id="informative-references">
