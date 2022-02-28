@@ -2480,22 +2480,55 @@
     </h2>
     <div>
     </div>
-    <h3 id="x9-1-example">
-      <bdi class="secno">9.1 </bdi>Example 1
+    <h3 id="x9-1-examples-cta">
+      <bdi class="secno">9.1 </bdi>Examples of Annotated CTAs
       <a class="self-link respec-offending-element" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#styles" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document"></a>
-      <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x9-1-example"></a>
+      <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x9-1-examples-cta"></a>
     </h3>
     <div>
       <p>
-        Example of Annotated Call-To-Action notification
+        Example of Discover CTA notification:
       </p>
       <code>
-        :ex0 a apn:PushNotification ;<br>
+        :ex1 a apn:PushNotification ;<br>
         <span class="tab">apn:hasCTA apn:Discover ;</span><br>
         <span class="tab">apn:notificationID "1642770111733" ;</span><br>
         <span class="tab">apn:notificationText "Your Daily Pick is ready! 🥰The elephant in the room is that daily life and trauma can be reasons our sexual feelings fall flat Today's selection takes a therapeutic approach to how to bring the glow back" ;</span><br>
         <span class="tab">apn:pushedBy :app_Blinkist ;</span><br>
         <span class="tab">apn:pushedOn "2022-01-21 13:01:52"^^xsd:datetime .</span>
+      </code>
+      <p>
+        Example of Purchase CTA notification:
+      </p>
+      <code>
+        :ex2 a apn:PushNotification ;<br>
+        <span class="tab">apn:hasCTA apn:Purchase ;</span><br>
+        <span class="tab">apn:notificationID "1642768061452" ;</span><br>
+        <span class="tab">apn:notificationText "TOP UP ON SPANISH SUN Save up to £310* on getaways to Spain" ;</span><br>
+        <span class="tab">apn:pushedBy :app_TUI ;</span><br>
+        <span class="tab">apn:pushedOn "2022-01-21 12:27:41"^^xsd:datetime .</span>
+      </code>
+      <p>
+        Example of Social CTA notification:
+      </p>
+      <code>
+        :ex3 a apn:PushNotification ;<br>
+        <span class="tab">apn:hasCTA apn:Social ;</span><br>
+        <span class="tab">apn:notificationID "1627563462874" ;</span><br>
+        <span class="tab">apn:notificationText "LinkedIn You have 4 messages and 6 notifications waiting for you on LinkedIn" ;</span><br>
+        <span class="tab">apn:pushedBy :app_LinkedIn ;</span><br>
+        <span class="tab">apn:pushedOn "2021-07-29 12:57:43"^^xsd:datetime .</span>
+      </code>
+      <p>
+        Example of Reminder CTA notification:
+      </p>
+      <code>
+        :ex4 a apn:PushNotification ;<br>
+        <span class="tab">apn:hasCTA apn:Reminder ;</span><br>
+        <span class="tab">apn:notificationID "1641515153599" ;</span><br>
+        <span class="tab">apn:notificationText "Light and houseplants 🪴 Check your natural light to see if houseplants have enough ☀️" ;</span><br>
+        <span class="tab">apn:pushedBy :app_Blossom ;</span><br>
+        <span class="tab">apn:pushedOn "2022-01-07 00:25:54"^^xsd:datetime .</span>
       </code>
     </div>
   </section>
