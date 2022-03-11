@@ -1,0 +1,440 @@
+<http://www.w3.org/ns/dpv#Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#Authenticating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#BrowsingBehavior> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#DeviceBased> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#EthnicOrigin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#FamilyStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#Interest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#MedicalHealth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#PoliticalAffiliation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#Professional> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#PurchasesAndSpendingHabit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#SocialNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<https://w3id.org/apn/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/issued> "2022-02-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/title> "Ontology for the Annotation of Push-Notifications" .
+<https://w3id.org/apn/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "apn:" .
+<https://w3id.org/apn/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+<https://w3id.org/apn/AccountManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/AccountManagement> <http://www.w3.org/2000/01/rdf-schema#label> "Account Management" .
+<https://w3id.org/apn/AccountManagement> <http://www.w3.org/2004/02/skos/core#definition> "Notifications that encourage subscribers to create and/or log into an account to take advantage of a certain feature."@en .
+<https://w3id.org/apn/AccountManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/ArtAndDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/ArtAndDesign> <http://www.w3.org/2000/01/rdf-schema#label> "Art And Design" .
+<https://w3id.org/apn/ArtAndDesign> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Awareness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Awareness> <http://www.w3.org/2000/01/rdf-schema#label> "Awareness" .
+<https://w3id.org/apn/Awareness> <http://www.w3.org/2004/02/skos/core#definition> "The notification makes subscribers aware of information that does not need further investigation by the subscriber, e.g., a new feature, upcoming holiday, weather, stock price, score in a match, etc. "@en .
+<https://w3id.org/apn/Awareness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/Beauty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Beauty> <http://www.w3.org/2000/01/rdf-schema#label> "Beauty" .
+<https://w3id.org/apn/Beauty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/BooksAndReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/BooksAndReference> <http://www.w3.org/2000/01/rdf-schema#label> "Books And Reference" .
+<https://w3id.org/apn/BooksAndReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business" .
+<https://w3id.org/apn/Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/CT_Awareness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_Awareness> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Awareness" .
+<https://w3id.org/apn/CT_Awareness> <http://www.w3.org/2004/02/skos/core#definition> "A campaign to promote general awareness of a topic."@en .
+<https://w3id.org/apn/CT_Awareness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/CT_BreakingContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_BreakingContent> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Breaking Content" .
+<https://w3id.org/apn/CT_BreakingContent> <http://www.w3.org/2004/02/skos/core#definition> "A campaign to promote new content that has just been created."@en .
+<https://w3id.org/apn/CT_BreakingContent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/CT_HelpFeedbackTips> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_HelpFeedbackTips> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Help Feedback Tips" .
+<https://w3id.org/apn/CT_HelpFeedbackTips> <http://www.w3.org/2004/02/skos/core#definition> "A campaign to get help or tips and to provide feedback."@en .
+<https://w3id.org/apn/CT_HelpFeedbackTips> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/CT_Loyalty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_Loyalty> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Loyalty" .
+<https://w3id.org/apn/CT_Loyalty> <http://www.w3.org/2004/02/skos/core#definition> "A campaign directed at loyal / returning / engaged users or customers."@en .
+<https://w3id.org/apn/CT_Loyalty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/CT_Newsletter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_Newsletter> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Newsletter" .
+<https://w3id.org/apn/CT_Newsletter> <http://www.w3.org/2004/02/skos/core#definition> "Informative campaign containing 'things of interest' to the user."@en .
+<https://w3id.org/apn/CT_Newsletter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/CT_Onboarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_Onboarding> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Onboarding" .
+<https://w3id.org/apn/CT_Onboarding> <http://www.w3.org/2004/02/skos/core#definition> "A campaign to induct users with a product/service, to acquaint them with features available or account management."@en .
+<https://w3id.org/apn/CT_Onboarding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/CT_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_Product> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Product" .
+<https://w3id.org/apn/CT_Product> <http://www.w3.org/2004/02/skos/core#definition> "A campaign to promote a particular product/feature."@en .
+<https://w3id.org/apn/CT_Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/CT_PromotionalFlash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_PromotionalFlash> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Promotional Flash" .
+<https://w3id.org/apn/CT_PromotionalFlash> <http://www.w3.org/2004/02/skos/core#definition> "A campaign to promote flash sale offers, i.e., they have some time limit associated."@en .
+<https://w3id.org/apn/CT_PromotionalFlash> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CT_Promotional> .
+<https://w3id.org/apn/CT_PromotionalGeneral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_PromotionalGeneral> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Promotional General" .
+<https://w3id.org/apn/CT_PromotionalGeneral> <http://www.w3.org/2004/02/skos/core#definition> "A campaign to promote general offers for the users."@en .
+<https://w3id.org/apn/CT_PromotionalGeneral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CT_Promotional> .
+<https://w3id.org/apn/CT_PromotionalRare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_PromotionalRare> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Promotional Rare" .
+<https://w3id.org/apn/CT_PromotionalRare> <http://www.w3.org/2004/02/skos/core#definition> "A campaign to promote a service/product associated with particular seasons and/or holidays/events."@en .
+<https://w3id.org/apn/CT_PromotionalRare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CT_Promotional> .
+<https://w3id.org/apn/CT_Reengagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_Reengagement> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Reengagement" .
+<https://w3id.org/apn/CT_Reengagement> <http://www.w3.org/2004/02/skos/core#definition> "A campaign enticing users / customers to re-engage with the service."@en .
+<https://w3id.org/apn/CT_Reengagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/CT_Social> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_Social> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Social" .
+<https://w3id.org/apn/CT_Social> <http://www.w3.org/2004/02/skos/core#definition> "A campaign based on or associated with social tools, social media or influencers."@en .
+<https://w3id.org/apn/CT_Social> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/Claim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Claim> <http://www.w3.org/2000/01/rdf-schema#label> "Claim" .
+<https://w3id.org/apn/Claim> <http://www.w3.org/2004/02/skos/core#definition> "Notifications that encourage the subscribers to click and claim some prize or reward from the application."@en .
+<https://w3id.org/apn/Claim> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/Comics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Comics> <http://www.w3.org/2000/01/rdf-schema#label> "Comics" .
+<https://w3id.org/apn/Comics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Communication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Communication> <http://www.w3.org/2000/01/rdf-schema#label> "Communication" .
+<https://w3id.org/apn/Communication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+<https://w3id.org/apn/Country> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their country of residence."@en .
+<https://w3id.org/apn/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Geographic> .
+<https://w3id.org/apn/Discover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Discover> <http://www.w3.org/2000/01/rdf-schema#label> "Discover" .
+<https://w3id.org/apn/Discover> <http://www.w3.org/2004/02/skos/core#definition> "Notifications that tease the content of the information itself to generate curiosity on the users and lead them to engage with the app."@en .
+<https://w3id.org/apn/Discover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/Download> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Download> <http://www.w3.org/2000/01/rdf-schema#label> "Download" .
+<https://w3id.org/apn/Download> <http://www.w3.org/2004/02/skos/core#definition> "Notifications to get the subscriber to download some asset."@en .
+<https://w3id.org/apn/Download> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/Education> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Education> <http://www.w3.org/2000/01/rdf-schema#label> "Education" .
+<https://w3id.org/apn/Education> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Engagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Engagement> <http://www.w3.org/2000/01/rdf-schema#label> "Engagement" .
+<https://w3id.org/apn/Engagement> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their engagement with the app, e.g., they have liked a video, followed another user, started a game."@en .
+<https://w3id.org/apn/Engagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Behavior> .
+<https://w3id.org/apn/Entertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Entertainment> <http://www.w3.org/2000/01/rdf-schema#label> "Entertainment" .
+<https://w3id.org/apn/Entertainment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Events> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Events> <http://www.w3.org/2000/01/rdf-schema#label> "Events" .
+<https://w3id.org/apn/Events> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/FamilyStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/FamilyStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Family Status" .
+<https://w3id.org/apn/FamilyStatus> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their family status, e.g., new parents, pregnancies."@en .
+<https://w3id.org/apn/FamilyStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Demographic> .
+<https://w3id.org/apn/Feedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Feedback> <http://www.w3.org/2000/01/rdf-schema#label> "Feedback" .
+<https://w3id.org/apn/Feedback> <http://www.w3.org/2004/02/skos/core#definition> "Notifications to get the subscriber to provide some form of feedback or response, for instance on the app's functionalities."@en .
+<https://w3id.org/apn/Feedback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/Finance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Finance> <http://www.w3.org/2000/01/rdf-schema#label> "Finance" .
+<https://w3id.org/apn/Finance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/FoodAndDrink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#label> "Food And Drink" .
+<https://w3id.org/apn/FoodAndDrink> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Games> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Games> <http://www.w3.org/2000/01/rdf-schema#label> "Games" .
+<https://w3id.org/apn/Games> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Health> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Health> <http://www.w3.org/2000/01/rdf-schema#label> "Health" .
+<https://w3id.org/apn/Health> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their health status."@en .
+<https://w3id.org/apn/Health> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Demographic> .
+<https://w3id.org/apn/HealthAndFitness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/HealthAndFitness> <http://www.w3.org/2000/01/rdf-schema#label> "Health And Fitness" .
+<https://w3id.org/apn/HealthAndFitness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Holidays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Holidays> <http://www.w3.org/2000/01/rdf-schema#label> "Holidays" .
+<https://w3id.org/apn/Holidays> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant in the time leading up to a holiday (Christmas, Halloween, Mother's Day, ...)."@en .
+<https://w3id.org/apn/Holidays> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/Interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Interest> <http://www.w3.org/2000/01/rdf-schema#label> "Interest" .
+<https://w3id.org/apn/Interest> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their interests, personal motivations or lifestyle."@en .
+<https://w3id.org/apn/Interest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Psychographic> .
+<https://w3id.org/apn/Job> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Job> <http://www.w3.org/2000/01/rdf-schema#label> "Job" .
+<https://w3id.org/apn/Job> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users who have a particular interest, e.g., football goal updates indicates an interest in sports and a new recipe an interest in cooking."@en .
+<https://w3id.org/apn/Job> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Demographic> .
+<https://w3id.org/apn/LibrariesAndDemo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/LibrariesAndDemo> <http://www.w3.org/2000/01/rdf-schema#label> "Libraries And Demo" .
+<https://w3id.org/apn/LibrariesAndDemo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Lifestyle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Lifestyle> <http://www.w3.org/2000/01/rdf-schema#label> "Lifestyle" .
+<https://w3id.org/apn/Lifestyle> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their particular lifestyle, e.g., vegan products, a person who runs or works out."@en .
+<https://w3id.org/apn/Lifestyle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Lifestyle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Psychographic> .
+<https://w3id.org/apn/Loyalty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Loyalty> <http://www.w3.org/2000/01/rdf-schema#label> "Loyalty" .
+<https://w3id.org/apn/Loyalty> <http://www.w3.org/2004/02/skos/core#definition> "Targeting a segment of users who are particularly loyal, e.g., daily recurrent users."@en .
+<https://w3id.org/apn/Loyalty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Behavior> .
+<https://w3id.org/apn/MapsAndNavigation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/MapsAndNavigation> <http://www.w3.org/2000/01/rdf-schema#label> "Maps And Navigation" .
+<https://w3id.org/apn/MapsAndNavigation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Medical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Medical> <http://www.w3.org/2000/01/rdf-schema#label> "Medical" .
+<https://w3id.org/apn/Medical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Motivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Motivation> <http://www.w3.org/2000/01/rdf-schema#label> "Motivation" .
+<https://w3id.org/apn/Motivation> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their aspirations or motivations, e.g., find a new job, get fitter, learn a new skill."@en .
+<https://w3id.org/apn/Motivation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Psychographic> .
+<https://w3id.org/apn/MusicAndAudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/MusicAndAudio> <http://www.w3.org/2000/01/rdf-schema#label> "Music And Audio" .
+<https://w3id.org/apn/MusicAndAudio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/NewsAndMagazines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/NewsAndMagazines> <http://www.w3.org/2000/01/rdf-schema#label> "News And Magazines" .
+<https://w3id.org/apn/NewsAndMagazines> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/NextDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/NextDays> <http://www.w3.org/2000/01/rdf-schema#label> "Next Days" .
+<https://w3id.org/apn/NextDays> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant for the next few days."@en .
+<https://w3id.org/apn/NextDays> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/NextHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/NextHours> <http://www.w3.org/2000/01/rdf-schema#label> "Next Hours" .
+<https://w3id.org/apn/NextHours> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant for the next few hours."@en .
+<https://w3id.org/apn/NextHours> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/NextMinutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/NextMinutes> <http://www.w3.org/2000/01/rdf-schema#label> "Next Minutes" .
+<https://w3id.org/apn/NextMinutes> <http://www.w3.org/2004/02/skos/core#definition> "The notification will only be relevant for the next few minutes."@en .
+<https://w3id.org/apn/NextMinutes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/NextMonths> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/NextMonths> <http://www.w3.org/2000/01/rdf-schema#label> "Next Months" .
+<https://w3id.org/apn/NextMonths> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant for the next few months."@en .
+<https://w3id.org/apn/NextMonths> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/NextWeeks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/NextWeeks> <http://www.w3.org/2000/01/rdf-schema#label> "Next Weeks" .
+<https://w3id.org/apn/NextWeeks> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant for the next few weeks."@en .
+<https://w3id.org/apn/NextWeeks> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/NextYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/NextYears> <http://www.w3.org/2000/01/rdf-schema#label> "Next Years" .
+<https://w3id.org/apn/NextYears> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant for the next few years."@en .
+<https://w3id.org/apn/NextYears> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/Occasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Occasion> <http://www.w3.org/2000/01/rdf-schema#label> "Occasion" .
+<https://w3id.org/apn/Occasion> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users who have engaged with or expressed interest in rare events, e.g., previously purchased during a holiday."@en .
+<https://w3id.org/apn/Occasion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Behavior> .
+<https://w3id.org/apn/PersonalMotivations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/PersonalMotivations> <http://www.w3.org/2000/01/rdf-schema#label> "Personal Motivations" .
+<https://w3id.org/apn/PersonalMotivations> <http://www.w3.org/2004/02/skos/core#definition> "Information about personal motivations."@en .
+<https://w3id.org/apn/PersonalMotivations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
+<https://w3id.org/apn/Photography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Photography> <http://www.w3.org/2000/01/rdf-schema#label> "Photography" .
+<https://w3id.org/apn/Photography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Play> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Play> <http://www.w3.org/2000/01/rdf-schema#label> "Play" .
+<https://w3id.org/apn/Play> <http://www.w3.org/2004/02/skos/core#definition> "Notifications related with gaming apps, where the subscriber is encouraged to re-engage with the game."@en .
+<https://w3id.org/apn/Play> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product" .
+<https://w3id.org/apn/Product> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users who have engaged with or expressed interest in a specific product, e.g., you will love the new X product just launched."@en .
+<https://w3id.org/apn/Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Behavior> .
+<https://w3id.org/apn/Productivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Productivity> <http://www.w3.org/2000/01/rdf-schema#label> "Productivity" .
+<https://w3id.org/apn/Productivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Purchase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Purchase> <http://www.w3.org/2000/01/rdf-schema#label> "Purchase" .
+<https://w3id.org/apn/Purchase> <http://www.w3.org/2004/02/skos/core#definition> "Notifications to get the subscriber to purchase a product or service."@en .
+<https://w3id.org/apn/Purchase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/PurchasingReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/PurchasingReason> <http://www.w3.org/2000/01/rdf-schema#label> "Purchasing Reason" .
+<https://w3id.org/apn/PurchasingReason> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users who have previously purchased or require a reason, incentive or nudge to purchase, e.g., you previously bought X, we recommend Y; 30% sale on now."@en .
+<https://w3id.org/apn/PurchasingReason> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Behavior> .
+<https://w3id.org/apn/Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region" .
+<https://w3id.org/apn/Region> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their geographic region, i.e., a location within a country."@en .
+<https://w3id.org/apn/Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Geographic> .
+<https://w3id.org/apn/Reminder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Reminder> <http://www.w3.org/2000/01/rdf-schema#label> "Reminder" .
+<https://w3id.org/apn/Reminder> <http://www.w3.org/2004/02/skos/core#definition> "Notifications that serve as a reminder or alert to the users or provide advice / tips."@en .
+<https://w3id.org/apn/Reminder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/Residence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Residence> <http://www.w3.org/2000/01/rdf-schema#label> "Residence" .
+<https://w3id.org/apn/Residence> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their type of residence, e.g., their house contains a garden."@en .
+<https://w3id.org/apn/Residence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Demographic> .
+<https://w3id.org/apn/Seasons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Seasons> <http://www.w3.org/2000/01/rdf-schema#label> "Seasons" .
+<https://w3id.org/apn/Seasons> <http://www.w3.org/2004/02/skos/core#definition> "The notification will only be relevant in certain seasons (summer, winter, ...)."@en .
+<https://w3id.org/apn/Seasons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/Shopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Shopping> <http://www.w3.org/2000/01/rdf-schema#label> "Shopping" .
+<https://w3id.org/apn/Shopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Social> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Social> <http://www.w3.org/2000/01/rdf-schema#label> "Social" .
+<https://w3id.org/apn/Social> <http://www.w3.org/2004/02/skos/core#definition> "Notifications that encourage the subscriber to engage with social tools e.g. share, like, comment, reply."@en .
+<https://w3id.org/apn/Social> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Social> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/Sports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Sports> <http://www.w3.org/2000/01/rdf-schema#label> "Sports" .
+<https://w3id.org/apn/Sports> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Strategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Strategy> <http://www.w3.org/2000/01/rdf-schema#label> "Strategy" .
+<https://w3id.org/apn/Strategy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/TravelAndLocal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/TravelAndLocal> <http://www.w3.org/2000/01/rdf-schema#label> "Travel And Local" .
+<https://w3id.org/apn/TravelAndLocal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Unclear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Unclear> <http://www.w3.org/2000/01/rdf-schema#label> "Unclear" .
+<https://w3id.org/apn/Unclear> <http://www.w3.org/2004/02/skos/core#definition> "The notification conveys some urgency (for example using words like 'now' or 'hurry up'), but from the content of the notification, it is not possible to identify how long it will remain relevant."@en .
+<https://w3id.org/apn/Unclear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/VideoPlayersAndEditors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/VideoPlayersAndEditors> <http://www.w3.org/2000/01/rdf-schema#label> "Video Players And Editors" .
+<https://w3id.org/apn/VideoPlayersAndEditors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Watch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Watch> <http://www.w3.org/2000/01/rdf-schema#label> "Watch" .
+<https://w3id.org/apn/Watch> <http://www.w3.org/2004/02/skos/core#definition> "Notifications that encourage the user to watch some content on the application."@en .
+<https://w3id.org/apn/Watch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/WatchApps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/WatchApps> <http://www.w3.org/2000/01/rdf-schema#label> "Watch Apps" .
+<https://w3id.org/apn/WatchApps> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/WatchFaces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/WatchFaces> <http://www.w3.org/2000/01/rdf-schema#label> "Watch Faces" .
+<https://w3id.org/apn/WatchFaces> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Weather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Weather> <http://www.w3.org/2000/01/rdf-schema#label> "Weather" .
+<https://w3id.org/apn/Weather> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Word> <http://www.w3.org/2000/01/rdf-schema#label> "Word" .
+<https://w3id.org/apn/Word> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/accountCreated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/accountCreated> <http://www.w3.org/2000/01/rdf-schema#label> "account created" .
+<https://w3id.org/apn/accountCreated> <http://www.w3.org/2004/02/skos/core#definition> "User created an account to use the application."@en .
+<https://w3id.org/apn/accountCreated> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/accountCreated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/apn/appName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/appName> <http://www.w3.org/2000/01/rdf-schema#label> "app name" .
+<https://w3id.org/apn/appName> <http://www.w3.org/2004/02/skos/core#definition> "The name of the application"@en .
+<https://w3id.org/apn/appName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/appName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/apn/canBeUsedToInfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/apn/canBeUsedToInfer> <http://www.w3.org/2000/01/rdf-schema#label> "can be used to infer" .
+<https://w3id.org/apn/canBeUsedToInfer> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the type of personal data that can be inferred from the notification."@en .
+<https://w3id.org/apn/canBeUsedToInfer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/PushNotification> .
+<https://w3id.org/apn/canBeUsedToInfer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/apn/Personalisation> .
+<https://w3id.org/apn/hasAppType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/apn/hasAppType> <http://www.w3.org/2000/01/rdf-schema#label> "has app type" .
+<https://w3id.org/apn/hasAppType> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the application type"@en .
+<https://w3id.org/apn/hasAppType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/hasAppType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/apn/ApplicationType> .
+<https://w3id.org/apn/hasCTA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/apn/hasCTA> <http://www.w3.org/2000/01/rdf-schema#label> "has call-to-action" .
+<https://w3id.org/apn/hasCTA> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the call to action of the notification"@en .
+<https://w3id.org/apn/hasCTA> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/PushNotification> .
+<https://w3id.org/apn/hasCTA> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/apn/CallToAction> .
+<https://w3id.org/apn/hasCampaignType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/apn/hasCampaignType> <http://www.w3.org/2000/01/rdf-schema#label> "has campaign type" .
+<https://w3id.org/apn/hasCampaignType> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the campaign type of the notification"@en .
+<https://w3id.org/apn/hasCampaignType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/PushNotification> .
+<https://w3id.org/apn/hasCampaignType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/hasTargetAudience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/apn/hasTargetAudience> <http://www.w3.org/2000/01/rdf-schema#label> "has target audience" .
+<https://w3id.org/apn/hasTargetAudience> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the target audience of the notification"@en .
+<https://w3id.org/apn/hasTargetAudience> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/PushNotification> .
+<https://w3id.org/apn/hasTargetAudience> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/apn/TargetAudience> .
+<https://w3id.org/apn/inAppPurchases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/inAppPurchases> <http://www.w3.org/2000/01/rdf-schema#label> "in app purchases" .
+<https://w3id.org/apn/inAppPurchases> <http://www.w3.org/2004/02/skos/core#definition> "Indicates if the application includes paid features/services"@en .
+<https://w3id.org/apn/inAppPurchases> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/inAppPurchases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/apn/installDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/installDate> <http://www.w3.org/2000/01/rdf-schema#label> "install date" .
+<https://w3id.org/apn/installDate> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the date and time when the application was installed"@en .
+<https://w3id.org/apn/installDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/installDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/apn/isTimeSensitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/isTimeSensitive> <http://www.w3.org/2000/01/rdf-schema#label> "is time sensitive" .
+<https://w3id.org/apn/isTimeSensitive> <http://www.w3.org/2004/02/skos/core#definition> "Indicates weather the notification is urgent, i.e. time-sensitive, or not."@en .
+<https://w3id.org/apn/isTimeSensitive> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/PushNotification> .
+<https://w3id.org/apn/isTimeSensitive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/apn/notificationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/notificationID> <http://www.w3.org/2000/01/rdf-schema#label> "notification ID" .
+<https://w3id.org/apn/notificationID> <http://www.w3.org/2004/02/skos/core#definition> "Unique identifier of the notification"@en .
+<https://w3id.org/apn/notificationID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/PushNotification> .
+<https://w3id.org/apn/notificationID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/apn/notificationText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/notificationText> <http://www.w3.org/2000/01/rdf-schema#label> "notification text" .
+<https://w3id.org/apn/notificationText> <http://www.w3.org/2004/02/skos/core#definition> "Text content of the notification, including emojis"@en .
+<https://w3id.org/apn/notificationText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/PushNotification> .
+<https://w3id.org/apn/notificationText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/apn/numberOfDownloads> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/numberOfDownloads> <http://www.w3.org/2000/01/rdf-schema#label> "number of downloads" .
+<https://w3id.org/apn/numberOfDownloads> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the number of times that the application was downloaded"@en .
+<https://w3id.org/apn/numberOfDownloads> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/numberOfDownloads> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/apn/numberOfReviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/numberOfReviews> <http://www.w3.org/2000/01/rdf-schema#label> "number of reviews" .
+<https://w3id.org/apn/numberOfReviews> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the number of reviews that the application has on the app store"@en .
+<https://w3id.org/apn/numberOfReviews> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/numberOfReviews> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/apn/pushedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/apn/pushedBy> <http://www.w3.org/2000/01/rdf-schema#label> "pushed by" .
+<https://w3id.org/apn/pushedBy> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the app that pushed the notification"@en .
+<https://w3id.org/apn/pushedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/PushNotification> .
+<https://w3id.org/apn/pushedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/pushedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/pushedOn> <http://www.w3.org/2000/01/rdf-schema#label> "pushed on" .
+<https://w3id.org/apn/pushedOn> <http://www.w3.org/2004/02/skos/core#definition> "Date and time when the notification is pushed by the application"@en .
+<https://w3id.org/apn/pushedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/PushNotification> .
+<https://w3id.org/apn/pushedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/apn/remainsRelevant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/apn/remainsRelevant> <http://www.w3.org/2000/01/rdf-schema#label> "remains relevant" .
+<https://w3id.org/apn/remainsRelevant> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the urgency of the notification - the period of time when the notification remains relevant for the user"@en .
+<https://w3id.org/apn/remainsRelevant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/PushNotification> .
+<https://w3id.org/apn/remainsRelevant> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/requiresAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/requiresAccount> <http://www.w3.org/2000/01/rdf-schema#label> "requires account" .
+<https://w3id.org/apn/requiresAccount> <http://www.w3.org/2004/02/skos/core#definition> "Indicates if the application requires the creation of an account to use"@en .
+<https://w3id.org/apn/requiresAccount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/requiresAccount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/apn/sizeInMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/sizeInMB> <http://www.w3.org/2000/01/rdf-schema#label> "size in MB" .
+<https://w3id.org/apn/sizeInMB> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the size of the application in megabytes"@en .
+<https://w3id.org/apn/sizeInMB> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/sizeInMB> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/apn/stars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/apn/stars> <http://www.w3.org/2000/01/rdf-schema#label> "stars" .
+<https://w3id.org/apn/stars> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the mean number of stars given by the users to the application"@en .
+<https://w3id.org/apn/stars> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/apn/Application> .
+<https://w3id.org/apn/stars> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/apn/Application> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Application> <http://www.w3.org/2000/01/rdf-schema#label> "Application" .
+<https://w3id.org/apn/Application> <http://www.w3.org/2004/02/skos/core#definition> "Computer program or software application designed to run on a mobile device such as a phone, tablet, or watch. Mobile applications often stand in contrast to desktop applications which are designed to run on desktop computers, and web applications which run in mobile web browsers rather than directly on the mobile device."@en .
+<https://w3id.org/apn/Geographic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Geographic> <http://www.w3.org/2000/01/rdf-schema#label> "Geographic" .
+<https://w3id.org/apn/Geographic> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their geographic whereabouts."@en .
+<https://w3id.org/apn/Geographic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/TargetAudience> .
+<https://w3id.org/apn/CT_Promotional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CT_Promotional> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type: Promotional" .
+<https://w3id.org/apn/CT_Promotional> <http://www.w3.org/2004/02/skos/core#definition> "A campaign based on promotional offers for the users."@en .
+<https://w3id.org/apn/CT_Promotional> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/CampaignType> .
+<https://w3id.org/apn/Psychographic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Psychographic> <http://www.w3.org/2000/01/rdf-schema#label> "Psychographic" .
+<https://w3id.org/apn/Psychographic> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their interests, personal motivations or lifestyle."@en .
+<https://w3id.org/apn/Psychographic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/TargetAudience> .
+<https://w3id.org/apn/Demographic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Demographic> <http://www.w3.org/2000/01/rdf-schema#label> "Demographic" .
+<https://w3id.org/apn/Demographic> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on quantifiable characteristics such as family status or job experience. "@en .
+<https://w3id.org/apn/Demographic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/TargetAudience> .
+<https://w3id.org/apn/Behavior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Behavior> <http://www.w3.org/2000/01/rdf-schema#label> "Behavior" .
+<https://w3id.org/apn/Behavior> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their behavior, purchase intent and interaction with certain online services or products."@en .
+<https://w3id.org/apn/Behavior> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/TargetAudience> .
+<https://w3id.org/apn/TargetAudience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/TargetAudience> <http://www.w3.org/2000/01/rdf-schema#label> "Target Audience" .
+<https://w3id.org/apn/TargetAudience> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the audience being targeted by the notification, based on their behavior or other demographic, geographic or psychographic characteristics."@en .
+<https://w3id.org/apn/PushNotification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/PushNotification> <http://www.w3.org/2004/02/skos/core#definition> "Push notifications are pop-up messages, sent by mobile or browser applications, that appear on the users\u2019 devices. Subscribers can be anywhere and still receive these messages as long as they\u2019re online or have their browsers running on their devices."@en .
+<https://w3id.org/apn/PushNotification> <http://www.w3.org/2000/01/rdf-schema#label> "Push Notification" .
+<https://w3id.org/apn/Urgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Urgency> <http://www.w3.org/2000/01/rdf-schema#label> "Urgency" .
+<https://w3id.org/apn/Urgency> <http://www.w3.org/2004/02/skos/core#definition> "The urgency of the notification - if it contains information that is only relevant for a certain period of time and becomes redundant if that period of time passes (for example, a notification about Friday night is irrelevant if delivered on Saturday morning)."@en .
+<https://w3id.org/apn/CampaignType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CampaignType> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign Type" .
+<https://w3id.org/apn/CampaignType> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the campaign type of the notification, based on the marketing strategy followed by a company to keeps its brand's visibility, i.e., to mantain and increase the number of notification subscribers."@en .
+<https://w3id.org/apn/CallToAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/CallToAction> <http://www.w3.org/2000/01/rdf-schema#label> "Call To Action" .
+<https://w3id.org/apn/CallToAction> <http://www.w3.org/2004/02/skos/core#definition> "The call-to-action of the notification - for example, 'Anne sent you a message on App X' is encouraging the user to interact with the app to communicate with other people."@en .
+<https://w3id.org/apn/Personalisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Personalisation> <http://www.w3.org/2000/01/rdf-schema#label> "Personalisation" .
+<https://w3id.org/apn/Personalisation> <http://www.w3.org/2004/02/skos/core#definition> "Indicates personal information that can be derived or inferred from the notification."@en .
+<https://w3id.org/apn/ApplicationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/ApplicationType> <http://www.w3.org/2000/01/rdf-schema#label> "Application Type" .
+<https://w3id.org/apn/ApplicationType> <http://www.w3.org/2004/02/skos/core#definition> ""@en .

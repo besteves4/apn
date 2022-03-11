@@ -1,0 +1,665 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns0: <http://purl.org/vocab/vann/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://www.w3.org/ns/dpv#Age> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#Authenticating> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#BrowsingBehavior> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#DeviceBased> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#EthnicOrigin> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#FamilyStructure> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#Interest> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#Location> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#MedicalHealth> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#PoliticalAffiliation> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#Professional> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#PurchasesAndSpendingHabit> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<http://www.w3.org/ns/dpv#SocialNetwork> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+<https://w3id.org/apn/>
+  a owl:Ontology ;
+  dc11:issued "2022-02-16"^^xsd:date ;
+  dc11:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+  dc11:title "Ontology for the Annotation of Push-Notifications" ;
+  ns0:preferredNamespacePrefix "apn:" ;
+  owl:versionInfo "0.1" .
+
+<https://w3id.org/apn/AccountManagement>
+  a owl:Class ;
+  rdfs:label "Account Management" ;
+  skos:definition "Notifications that encourage subscribers to create and/or log into an account to take advantage of a certain feature."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/ArtAndDesign>
+  a owl:Class ;
+  rdfs:label "Art And Design" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Awareness>
+  a owl:Class ;
+  rdfs:label "Awareness" ;
+  skos:definition "The notification makes subscribers aware of information that does not need further investigation by the subscriber, e.g., a new feature, upcoming holiday, weather, stock price, score in a match, etc. "@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/Beauty>
+  a owl:Class ;
+  rdfs:label "Beauty" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/BooksAndReference>
+  a owl:Class ;
+  rdfs:label "Books And Reference" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Business>
+  a owl:Class ;
+  rdfs:label "Business" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/CT_Awareness>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Awareness" ;
+  skos:definition "A campaign to promote general awareness of a topic."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/CT_BreakingContent>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Breaking Content" ;
+  skos:definition "A campaign to promote new content that has just been created."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/CT_HelpFeedbackTips>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Help Feedback Tips" ;
+  skos:definition "A campaign to get help or tips and to provide feedback."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/CT_Loyalty>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Loyalty" ;
+  skos:definition "A campaign directed at loyal / returning / engaged users or customers."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/CT_Newsletter>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Newsletter" ;
+  skos:definition "Informative campaign containing 'things of interest' to the user."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/CT_Onboarding>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Onboarding" ;
+  skos:definition "A campaign to induct users with a product/service, to acquaint them with features available or account management."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/CT_Product>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Product" ;
+  skos:definition "A campaign to promote a particular product/feature."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/CT_PromotionalFlash>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Promotional Flash" ;
+  skos:definition "A campaign to promote flash sale offers, i.e., they have some time limit associated."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CT_Promotional> .
+
+<https://w3id.org/apn/CT_PromotionalGeneral>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Promotional General" ;
+  skos:definition "A campaign to promote general offers for the users."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CT_Promotional> .
+
+<https://w3id.org/apn/CT_PromotionalRare>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Promotional Rare" ;
+  skos:definition "A campaign to promote a service/product associated with particular seasons and/or holidays/events."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CT_Promotional> .
+
+<https://w3id.org/apn/CT_Reengagement>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Reengagement" ;
+  skos:definition "A campaign enticing users / customers to re-engage with the service."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/CT_Social>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Social" ;
+  skos:definition "A campaign based on or associated with social tools, social media or influencers."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/Claim>
+  a owl:Class ;
+  rdfs:label "Claim" ;
+  skos:definition "Notifications that encourage the subscribers to click and claim some prize or reward from the application."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/Comics>
+  a owl:Class ;
+  rdfs:label "Comics" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Communication>
+  a owl:Class ;
+  rdfs:label "Communication" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Country>
+  a owl:Class ;
+  rdfs:label "Country" ;
+  skos:definition "Targeting users based on their country of residence."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Geographic> .
+
+<https://w3id.org/apn/Discover>
+  a owl:Class ;
+  rdfs:label "Discover" ;
+  skos:definition "Notifications that tease the content of the information itself to generate curiosity on the users and lead them to engage with the app."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/Download>
+  a owl:Class ;
+  rdfs:label "Download" ;
+  skos:definition "Notifications to get the subscriber to download some asset."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/Education>
+  a owl:Class ;
+  rdfs:label "Education" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Engagement>
+  a owl:Class ;
+  rdfs:label "Engagement" ;
+  skos:definition "Targeting users based on their engagement with the app, e.g., they have liked a video, followed another user, started a game."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Behavior> .
+
+<https://w3id.org/apn/Entertainment>
+  a owl:Class ;
+  rdfs:label "Entertainment" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Events>
+  a owl:Class ;
+  rdfs:label "Events" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/FamilyStatus>
+  a owl:Class ;
+  rdfs:label "Family Status" ;
+  skos:definition "Targeting users based on their family status, e.g., new parents, pregnancies."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Demographic> .
+
+<https://w3id.org/apn/Feedback>
+  a owl:Class ;
+  rdfs:label "Feedback" ;
+  skos:definition "Notifications to get the subscriber to provide some form of feedback or response, for instance on the app's functionalities."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/Finance>
+  a owl:Class ;
+  rdfs:label "Finance" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/FoodAndDrink>
+  a owl:Class ;
+  rdfs:label "Food And Drink" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Games>
+  a owl:Class ;
+  rdfs:label "Games" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Health>
+  a owl:Class ;
+  rdfs:label "Health" ;
+  skos:definition "Targeting users based on their health status."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Demographic> .
+
+<https://w3id.org/apn/HealthAndFitness>
+  a owl:Class ;
+  rdfs:label "Health And Fitness" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Holidays>
+  a owl:Class ;
+  rdfs:label "Holidays" ;
+  skos:definition "The notification will be relevant in the time leading up to a holiday (Christmas, Halloween, Mother's Day, ...)."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Urgency> .
+
+<https://w3id.org/apn/Interest>
+  a owl:Class ;
+  rdfs:label "Interest" ;
+  skos:definition "Targeting users based on their interests, personal motivations or lifestyle."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Psychographic> .
+
+<https://w3id.org/apn/Job>
+  a owl:Class ;
+  rdfs:label "Job" ;
+  skos:definition "Targeting users who have a particular interest, e.g., football goal updates indicates an interest in sports and a new recipe an interest in cooking."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Demographic> .
+
+<https://w3id.org/apn/LibrariesAndDemo>
+  a owl:Class ;
+  rdfs:label "Libraries And Demo" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Lifestyle>
+  a owl:Class ;
+  rdfs:label "Lifestyle" ;
+  skos:definition "Targeting users based on their particular lifestyle, e.g., vegan products, a person who runs or works out."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType>, <https://w3id.org/apn/Psychographic> .
+
+<https://w3id.org/apn/Loyalty>
+  a owl:Class ;
+  rdfs:label "Loyalty" ;
+  skos:definition "Targeting a segment of users who are particularly loyal, e.g., daily recurrent users."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Behavior> .
+
+<https://w3id.org/apn/MapsAndNavigation>
+  a owl:Class ;
+  rdfs:label "Maps And Navigation" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Medical>
+  a owl:Class ;
+  rdfs:label "Medical" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Motivation>
+  a owl:Class ;
+  rdfs:label "Motivation" ;
+  skos:definition "Targeting users based on their aspirations or motivations, e.g., find a new job, get fitter, learn a new skill."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Psychographic> .
+
+<https://w3id.org/apn/MusicAndAudio>
+  a owl:Class ;
+  rdfs:label "Music And Audio" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/NewsAndMagazines>
+  a owl:Class ;
+  rdfs:label "News And Magazines" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/NextDays>
+  a owl:Class ;
+  rdfs:label "Next Days" ;
+  skos:definition "The notification will be relevant for the next few days."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Urgency> .
+
+<https://w3id.org/apn/NextHours>
+  a owl:Class ;
+  rdfs:label "Next Hours" ;
+  skos:definition "The notification will be relevant for the next few hours."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Urgency> .
+
+<https://w3id.org/apn/NextMinutes>
+  a owl:Class ;
+  rdfs:label "Next Minutes" ;
+  skos:definition "The notification will only be relevant for the next few minutes."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Urgency> .
+
+<https://w3id.org/apn/NextMonths>
+  a owl:Class ;
+  rdfs:label "Next Months" ;
+  skos:definition "The notification will be relevant for the next few months."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Urgency> .
+
+<https://w3id.org/apn/NextWeeks>
+  a owl:Class ;
+  rdfs:label "Next Weeks" ;
+  skos:definition "The notification will be relevant for the next few weeks."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Urgency> .
+
+<https://w3id.org/apn/NextYears>
+  a owl:Class ;
+  rdfs:label "Next Years" ;
+  skos:definition "The notification will be relevant for the next few years."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Urgency> .
+
+<https://w3id.org/apn/Occasion>
+  a owl:Class ;
+  rdfs:label "Occasion" ;
+  skos:definition "Targeting users who have engaged with or expressed interest in rare events, e.g., previously purchased during a holiday."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Behavior> .
+
+<https://w3id.org/apn/PersonalMotivations>
+  a owl:Class ;
+  rdfs:label "Personal Motivations" ;
+  skos:definition "Information about personal motivations."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
+
+<https://w3id.org/apn/Photography>
+  a owl:Class ;
+  rdfs:label "Photography" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Play>
+  a owl:Class ;
+  rdfs:label "Play" ;
+  skos:definition "Notifications related with gaming apps, where the subscriber is encouraged to re-engage with the game."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/Product>
+  a owl:Class ;
+  rdfs:label "Product" ;
+  skos:definition "Targeting users who have engaged with or expressed interest in a specific product, e.g., you will love the new X product just launched."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Behavior> .
+
+<https://w3id.org/apn/Productivity>
+  a owl:Class ;
+  rdfs:label "Productivity" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Purchase>
+  a owl:Class ;
+  rdfs:label "Purchase" ;
+  skos:definition "Notifications to get the subscriber to purchase a product or service."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/PurchasingReason>
+  a owl:Class ;
+  rdfs:label "Purchasing Reason" ;
+  skos:definition "Targeting users who have previously purchased or require a reason, incentive or nudge to purchase, e.g., you previously bought X, we recommend Y; 30% sale on now."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Behavior> .
+
+<https://w3id.org/apn/Region>
+  a owl:Class ;
+  rdfs:label "Region" ;
+  skos:definition "Targeting users based on their geographic region, i.e., a location within a country."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Geographic> .
+
+<https://w3id.org/apn/Reminder>
+  a owl:Class ;
+  rdfs:label "Reminder" ;
+  skos:definition "Notifications that serve as a reminder or alert to the users or provide advice / tips."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/Residence>
+  a owl:Class ;
+  rdfs:label "Residence" ;
+  skos:definition "Targeting users based on their type of residence, e.g., their house contains a garden."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Demographic> .
+
+<https://w3id.org/apn/Seasons>
+  a owl:Class ;
+  rdfs:label "Seasons" ;
+  skos:definition "The notification will only be relevant in certain seasons (summer, winter, ...)."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Urgency> .
+
+<https://w3id.org/apn/Shopping>
+  a owl:Class ;
+  rdfs:label "Shopping" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Social>
+  a owl:Class ;
+  rdfs:label "Social" ;
+  skos:definition "Notifications that encourage the subscriber to engage with social tools e.g. share, like, comment, reply."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType>, <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/Sports>
+  a owl:Class ;
+  rdfs:label "Sports" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Strategy>
+  a owl:Class ;
+  rdfs:label "Strategy" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/TravelAndLocal>
+  a owl:Class ;
+  rdfs:label "Travel And Local" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Unclear>
+  a owl:Class ;
+  rdfs:label "Unclear" ;
+  skos:definition "The notification conveys some urgency (for example using words like 'now' or 'hurry up'), but from the content of the notification, it is not possible to identify how long it will remain relevant."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/Urgency> .
+
+<https://w3id.org/apn/VideoPlayersAndEditors>
+  a owl:Class ;
+  rdfs:label "Video Players And Editors" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Watch>
+  a owl:Class ;
+  rdfs:label "Watch" ;
+  skos:definition "Notifications that encourage the user to watch some content on the application."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/WatchApps>
+  a owl:Class ;
+  rdfs:label "Watch Apps" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/WatchFaces>
+  a owl:Class ;
+  rdfs:label "Watch Faces" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Weather>
+  a owl:Class ;
+  rdfs:label "Weather" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/Word>
+  a owl:Class ;
+  rdfs:label "Word" ;
+  rdfs:subClassOf <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/accountCreated>
+  a owl:DatatypeProperty ;
+  rdfs:label "account created" ;
+  skos:definition "User created an account to use the application."@en ;
+  rdfs:domain <https://w3id.org/apn/Application> ;
+  rdfs:range xsd:boolean .
+
+<https://w3id.org/apn/appName>
+  a owl:DatatypeProperty ;
+  rdfs:label "app name" ;
+  skos:definition "The name of the application"@en ;
+  rdfs:domain <https://w3id.org/apn/Application> ;
+  rdfs:range xsd:string .
+
+<https://w3id.org/apn/canBeUsedToInfer>
+  a owl:ObjectProperty ;
+  rdfs:label "can be used to infer" ;
+  skos:definition "Indicates the type of personal data that can be inferred from the notification."@en ;
+  rdfs:domain <https://w3id.org/apn/PushNotification> ;
+  rdfs:range <https://w3id.org/apn/Personalisation> .
+
+<https://w3id.org/apn/hasAppType>
+  a owl:ObjectProperty ;
+  rdfs:label "has app type" ;
+  skos:definition "Indicates the application type"@en ;
+  rdfs:domain <https://w3id.org/apn/Application> ;
+  rdfs:range <https://w3id.org/apn/ApplicationType> .
+
+<https://w3id.org/apn/hasCTA>
+  a owl:ObjectProperty ;
+  rdfs:label "has call-to-action" ;
+  skos:definition "Indicates the call to action of the notification"@en ;
+  rdfs:domain <https://w3id.org/apn/PushNotification> ;
+  rdfs:range <https://w3id.org/apn/CallToAction> .
+
+<https://w3id.org/apn/hasCampaignType>
+  a owl:ObjectProperty ;
+  rdfs:label "has campaign type" ;
+  skos:definition "Indicates the campaign type of the notification"@en ;
+  rdfs:domain <https://w3id.org/apn/PushNotification> ;
+  rdfs:range <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/hasTargetAudience>
+  a owl:ObjectProperty ;
+  rdfs:label "has target audience" ;
+  skos:definition "Indicates the target audience of the notification"@en ;
+  rdfs:domain <https://w3id.org/apn/PushNotification> ;
+  rdfs:range <https://w3id.org/apn/TargetAudience> .
+
+<https://w3id.org/apn/inAppPurchases>
+  a owl:DatatypeProperty ;
+  rdfs:label "in app purchases" ;
+  skos:definition "Indicates if the application includes paid features/services"@en ;
+  rdfs:domain <https://w3id.org/apn/Application> ;
+  rdfs:range xsd:boolean .
+
+<https://w3id.org/apn/installDate>
+  a owl:DatatypeProperty ;
+  rdfs:label "install date" ;
+  skos:definition "Indicates the date and time when the application was installed"@en ;
+  rdfs:domain <https://w3id.org/apn/Application> ;
+  rdfs:range xsd:dateTime .
+
+<https://w3id.org/apn/isTimeSensitive>
+  a owl:DatatypeProperty ;
+  rdfs:label "is time sensitive" ;
+  skos:definition "Indicates weather the notification is urgent, i.e. time-sensitive, or not."@en ;
+  rdfs:domain <https://w3id.org/apn/PushNotification> ;
+  rdfs:range xsd:boolean .
+
+<https://w3id.org/apn/notificationID>
+  a owl:DatatypeProperty ;
+  rdfs:label "notification ID" ;
+  skos:definition "Unique identifier of the notification"@en ;
+  rdfs:domain <https://w3id.org/apn/PushNotification> ;
+  rdfs:range xsd:integer .
+
+<https://w3id.org/apn/notificationText>
+  a owl:DatatypeProperty ;
+  rdfs:label "notification text" ;
+  skos:definition "Text content of the notification, including emojis"@en ;
+  rdfs:domain <https://w3id.org/apn/PushNotification> ;
+  rdfs:range xsd:string .
+
+<https://w3id.org/apn/numberOfDownloads>
+  a owl:DatatypeProperty ;
+  rdfs:label "number of downloads" ;
+  skos:definition "Indicates the number of times that the application was downloaded"@en ;
+  rdfs:domain <https://w3id.org/apn/Application> ;
+  rdfs:range xsd:integer .
+
+<https://w3id.org/apn/numberOfReviews>
+  a owl:DatatypeProperty ;
+  rdfs:label "number of reviews" ;
+  skos:definition "Indicates the number of reviews that the application has on the app store"@en ;
+  rdfs:domain <https://w3id.org/apn/Application> ;
+  rdfs:range xsd:integer .
+
+<https://w3id.org/apn/pushedBy>
+  a owl:ObjectProperty ;
+  rdfs:label "pushed by" ;
+  skos:definition "Indicates the app that pushed the notification"@en ;
+  rdfs:domain <https://w3id.org/apn/PushNotification> ;
+  rdfs:range <https://w3id.org/apn/Application> .
+
+<https://w3id.org/apn/pushedOn>
+  a owl:DatatypeProperty ;
+  rdfs:label "pushed on" ;
+  skos:definition "Date and time when the notification is pushed by the application"@en ;
+  rdfs:domain <https://w3id.org/apn/PushNotification> ;
+  rdfs:range xsd:dateTime .
+
+<https://w3id.org/apn/remainsRelevant>
+  a owl:ObjectProperty ;
+  rdfs:label "remains relevant" ;
+  skos:definition "Indicates the urgency of the notification - the period of time when the notification remains relevant for the user"@en ;
+  rdfs:domain <https://w3id.org/apn/PushNotification> ;
+  rdfs:range <https://w3id.org/apn/Urgency> .
+
+<https://w3id.org/apn/requiresAccount>
+  a owl:DatatypeProperty ;
+  rdfs:label "requires account" ;
+  skos:definition "Indicates if the application requires the creation of an account to use"@en ;
+  rdfs:domain <https://w3id.org/apn/Application> ;
+  rdfs:range xsd:boolean .
+
+<https://w3id.org/apn/sizeInMB>
+  a owl:DatatypeProperty ;
+  rdfs:label "size in MB" ;
+  skos:definition "Indicates the size of the application in megabytes"@en ;
+  rdfs:domain <https://w3id.org/apn/Application> ;
+  rdfs:range xsd:float .
+
+<https://w3id.org/apn/stars>
+  a owl:DatatypeProperty ;
+  rdfs:label "stars" ;
+  skos:definition "Indicates the mean number of stars given by the users to the application"@en ;
+  rdfs:domain <https://w3id.org/apn/Application> ;
+  rdfs:range xsd:float .
+
+<https://w3id.org/apn/Application>
+  a owl:Class ;
+  rdfs:label "Application" ;
+  skos:definition "Computer program or software application designed to run on a mobile device such as a phone, tablet, or watch. Mobile applications often stand in contrast to desktop applications which are designed to run on desktop computers, and web applications which run in mobile web browsers rather than directly on the mobile device."@en .
+
+<https://w3id.org/apn/Geographic>
+  a owl:Class ;
+  rdfs:label "Geographic" ;
+  skos:definition "Targeting users based on their geographic whereabouts."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/TargetAudience> .
+
+<https://w3id.org/apn/CT_Promotional>
+  a owl:Class ;
+  rdfs:label "Campaign Type: Promotional" ;
+  skos:definition "A campaign based on promotional offers for the users."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/CampaignType> .
+
+<https://w3id.org/apn/Psychographic>
+  a owl:Class ;
+  rdfs:label "Psychographic" ;
+  skos:definition "Targeting users based on their interests, personal motivations or lifestyle."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/TargetAudience> .
+
+<https://w3id.org/apn/Demographic>
+  a owl:Class ;
+  rdfs:label "Demographic" ;
+  skos:definition "Targeting users based on quantifiable characteristics such as family status or job experience. "@en ;
+  rdfs:subClassOf <https://w3id.org/apn/TargetAudience> .
+
+<https://w3id.org/apn/Behavior>
+  a owl:Class ;
+  rdfs:label "Behavior" ;
+  skos:definition "Targeting users based on their behavior, purchase intent and interaction with certain online services or products."@en ;
+  rdfs:subClassOf <https://w3id.org/apn/TargetAudience> .
+
+<https://w3id.org/apn/TargetAudience>
+  a owl:Class ;
+  rdfs:label "Target Audience" ;
+  skos:definition "Indicates the audience being targeted by the notification, based on their behavior or other demographic, geographic or psychographic characteristics."@en .
+
+<https://w3id.org/apn/PushNotification>
+  a owl:Class ;
+  skos:definition "Push notifications are pop-up messages, sent by mobile or browser applications, that appear on the users’ devices. Subscribers can be anywhere and still receive these messages as long as they’re online or have their browsers running on their devices."@en ;
+  rdfs:label "Push Notification" .
+
+<https://w3id.org/apn/Urgency>
+  a owl:Class ;
+  rdfs:label "Urgency" ;
+  skos:definition "The urgency of the notification - if it contains information that is only relevant for a certain period of time and becomes redundant if that period of time passes (for example, a notification about Friday night is irrelevant if delivered on Saturday morning)."@en .
+
+<https://w3id.org/apn/CampaignType>
+  a owl:Class ;
+  rdfs:label "Campaign Type" ;
+  skos:definition "Indicates the campaign type of the notification, based on the marketing strategy followed by a company to keeps its brand's visibility, i.e., to mantain and increase the number of notification subscribers."@en .
+
+<https://w3id.org/apn/CallToAction>
+  a owl:Class ;
+  rdfs:label "Call To Action" ;
+  skos:definition "The call-to-action of the notification - for example, 'Anne sent you a message on App X' is encouraging the user to interact with the app to communicate with other people."@en .
+
+<https://w3id.org/apn/Personalisation>
+  a owl:Class ;
+  rdfs:label "Personalisation" ;
+  skos:definition "Indicates personal information that can be derived or inferred from the notification."@en .
+
+<https://w3id.org/apn/ApplicationType>
+  a owl:Class ;
+  rdfs:label "Application Type" ;
+  skos:definition ""@en .
+
