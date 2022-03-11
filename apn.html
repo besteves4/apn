@@ -31,6 +31,7 @@
 	
 	<link rel="stylesheet" href="./apn_files/localstyle.css">
 	<script src="./apn_files/jquery.min.js.transferir" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 		
 	<style id="respec-ui-styles" class="removeOnSave">
     .respec-modal .close-button{position:absolute;z-index:inherit;padding:.2em;font-weight:700;cursor:pointer;margin-left:5px;border:none;background:0 0}
@@ -175,7 +176,7 @@
     var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </style><!-- Support ReSpec's development - https://opencollective.com/respec -->
   <meta name="monetization" class="removeOnSave" content="$ilp.uphold.com/DwJmxPHHi8K3">
-  <script id="initialUserConfig" type="application/json">
+<!--   <script id="initialUserConfig" type="application/json">
     {
       "shortName": "notification",
       "editors": [
@@ -213,7 +214,7 @@
       "publishISODate": "2021-04-16T00:00:00.000Z",
       "generatedSubtitle": ""
     }
-  </script>
+  </script> -->
 </head>
 <body class="h-entry informative toc-sidebar">
   <p id="toc-nav">
@@ -236,7 +237,7 @@
       <dd>
         <a href="https://w3id.org/apn/">https://w3id.org/apn/</a>
       </dd>
-      <dt>Editors:</dt>
+      <!-- <dt>Editors:</dt>
       <dd class="p-author h-card vcard">
         <a class="ed_mailto u-email email p-name" href="mailto:beatriz.gesteves@upm.es">Beatriz Esteves</a>
         (<a class="p-org org h-org h-card" href="https://oeg.fi.upm.es/">Ontology Engineering Group, Universidad Politécnica de Madrid</a>)
@@ -261,7 +262,7 @@
       </dd>
       <dd>
         <a href="https://github.com/besteves4/apn/pulls">Pull requests</a>
-      </dd>
+      </dd> -->
     </dl>
     <hr title="Separator for header">
   </div>
@@ -828,7 +829,7 @@
             that can be used to classify push-notification data, in particular its text content, 
             with the end goal of creating a service which pushes more empathethic content to 
             push-notification subscribers. Specifically, the notification content will be used
-            to categorize the notification in terms of: (i) its spec'ific call-to-action, 
+            to categorize the notification in terms of: (i) its specific call-to-action, 
             (ii) and respective marketing campaign type, (iii) its target audience, (iv) its time
             sensitiveness and (v) the presence of information that can be used 
             to infer personal data from the subscribers.
@@ -901,7 +902,7 @@
             CQ3. What is the application type in relation to its content?
           </td>
           <td class="table-cell">
-            CQ4. What is the call-to-action (CTA) of the notification?<br>
+            CQ4. What is the call-to-action of the notification?<br>
             CQ5. Does the notification belong to a specific campaign type?<br>
             CQ6. How urgent is the notification?<br>
             CQ7. Does the notification have a clear target audience?<br>
@@ -941,6 +942,26 @@
                 <th>Description</th>
               </tr>
               <tr>
+                <td>apn</td>
+                <td>https://w3id.org/apn/</td>
+                <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-apn" title="Ontology for the Annotation of Push-Notifications">apn</a></cite>]</td>
+              </tr>
+              <tr>
+                <td>dc</td>
+                <td>http://purl.org/dc/elements/1.1/</td>
+                <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-dc" title="DCMI Metadata Terms">dc</a></cite>]</td>
+              </tr>
+              <tr>
+                <td>dpv</td>
+                <td>http://www.w3.org/ns/dpv#</td>
+                <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-dpv" title="Data Privacy Vocabulary (DPV) version 0.2">dpv</a></cite>]</td>
+              </tr>
+              <tr>
+                <td>owl</td>
+                <td>http://www.w3.org/2002/07/owl#</td>
+                <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-owl2-overview" title="OWL 2 Web Ontology Language Document Overview (Second Edition)">owl2-overview</a></cite>]</td>
+              </tr>
+              <tr>
                 <td>rdf</td>
                 <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#</td>
                 <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-rdf11-concepts" title="RDF 1.1 Concepts and Abstract Syntax">rdf11-concepts</a></cite>]</td>
@@ -951,14 +972,9 @@
                 <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-rdf-schema" title="RDF Schema 1.1">rdf-schema</a></cite>]</td>
               </tr>
               <tr>
-                <td>owl</td>
-                <td>http://www.w3.org/2002/07/owl#</td>
-                <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-owl2-overview" title="OWL 2 Web Ontology Language Document Overview (Second Edition)">owl2-overview</a></cite>]</td>
-              </tr>
-              <tr>
-                <td>dc</td>
-                <td>http://purl.org/dc/elements/1.1/</td>
-                <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-dc" title="DCMI Metadata Terms">dc</a></cite>]</td>
+                <td>skos</td>
+                <td>http://www.w3.org/2004/02/skos/core#</td>
+                <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-skos" title="Simple Knowledge Organization System">skos</a></cite>]</td>
               </tr>
               <tr>
                 <td>vann</td>
@@ -969,16 +985,6 @@
                 <td>xsd</td>
                 <td>http://www.w3.org/2001/XMLSchema#</td>
                 <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-xsd" title="XML Schema">xsd</a></cite>]</td>
-              </tr>
-              <tr>
-                <td>dpv</td>
-                <td>http://www.w3.org/ns/dpv#</td>
-                <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-dpv" title="Data Privacy Vocabulary (DPV) version 0.2">dpv</a></cite>]</td>
-              </tr>
-              <tr>
-                <td>apn</td>
-                <td>https://w3id.org/apn/</td>
-                <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-apn" title="Ontology for the Annotation of Push-Notifications">apn</a></cite>]</td>
               </tr>
             </tbody>
           </table>
@@ -1001,9 +1007,9 @@
         <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x3-3-1-notification"></a>
       </h3>
       <table class="def propdef">
-          <tbody><tr><th>Definition:</th> <td>Push Notification</td></tr>
+          <tbody><tr><th>Label:</th> <td>Push Notification</td></tr>
           <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#PushNotification">https://w3id.org/apn#PushNotification</a></td></tr>
-          <tr><th>Description:</th> 
+          <tr><th>Definition:</th> 
             <td>
               Push notifications are pop-up messages, sent by mobile or browser applications, that appear on the users’ devices. 
               Subscribers can be anywhere and still receive these messages as long as they’re online or have their browsers running on their devices.
@@ -1012,9 +1018,9 @@
           </tbody>
       </table>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>notification ID</td></tr>
+        <tbody><tr><th>Label:</th> <td>notification ID</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#notificationID">https://w3id.org/apn#notificationID</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Unique identifier of the notification
           </td>
@@ -1024,9 +1030,9 @@
         </tbody>
       </table>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>notification text</td></tr>
+        <tbody><tr><th>Label:</th> <td>notification text</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#notificationText">https://w3id.org/apn#notificationText</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Text content of the notification, including emojis
           </td>
@@ -1036,9 +1042,9 @@
         </tbody>
       </table>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>pushed on</td></tr>
+        <tbody><tr><th>Label:</th> <td>pushed on</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#pushedOn">https://w3id.org/apn#pushedOn</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Date and time when the notification is pushed by the application 
           </td>
@@ -1048,9 +1054,9 @@
         </tbody>
       </table>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>pushed by</td></tr>
+        <tbody><tr><th>Label:</th> <td>pushed by</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#pushedBy">https://w3id.org/apn#pushedBy</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Indicates the app that pushed the notification 
           </td>
@@ -1061,14 +1067,14 @@
       </table>
     </section>
     <section id="application">
-      <h3 id="x3-3-2-application">
+      <h3 id="x3-3-2-app">
         <bdi class="secno">3.2 </bdi>Application
-        <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x3-3-2-application"></a>
+        <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x3-3-2-app"></a>
       </h3>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>Application</td></tr>
+        <tbody><tr><th>Label:</th> <td>Application</td></tr>
           <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Application">https://w3id.org/apn#Application</a></td></tr>
-          <tr><th>Description:</th> 
+          <tr><th>Definition:</th> 
             <td>
               Computer program or software application designed to run on a mobile device such as a phone, tablet, or watch. 
               Mobile applications often stand in contrast to desktop applications which are designed to run on desktop computers, 
@@ -1078,9 +1084,21 @@
         </tbody>
       </table>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>app name</td></tr>
+        <tbody><tr><th>Label:</th> <td>account created</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#accountCreated">https://w3id.org/apn#accountCreated</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            User created an account to use the application
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#Application">Application</a></td></tr>
+        <tr><th>Range:</th> <td><a href="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a></td></tr>
+        </tbody>
+      </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>app name</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#appName">https://w3id.org/apn#appName</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The name of the application
           </td>
@@ -1090,9 +1108,9 @@
         </tbody>
       </table>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>has app type</td></tr>
+        <tbody><tr><th>Label:</th> <td>has app type</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#hasAppType">https://w3id.org/apn#hasAppType</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Indicates the application type
           </td>
@@ -1102,6 +1120,90 @@
           <a href="https://w3id.org/apn#ApplicationType">ApplicationType</a>
         </tbody>
       </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>in app purchases</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#inAppPurchases">https://w3id.org/apn#inAppPurchases</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates if the application includes paid features/services
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#Application">Application</a></td></tr>
+        <tr><th>Range:</th> <td><a href="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a>
+        </tbody>
+      </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>install date</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#installDate">https://w3id.org/apn#installDate</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates the date and time when the application was installed
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#Application">Application</a></td></tr>
+        <tr><th>Range:</th> <td><a href="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</a>
+        </tbody>
+      </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>number of downloads</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#numberOfDownloads">https://w3id.org/apn#numberOfDownloads</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates the number of times that the application was downloaded
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#Application">Application</a></td></tr>
+        <tr><th>Range:</th> <td><a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a>
+        </tbody>
+      </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>number of reviews</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#numberOfReviews">https://w3id.org/apn#numberOfReviews</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates the number of reviews that the application has on the app store
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#Application">Application</a></td></tr>
+        <tr><th>Range:</th> <td><a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a>
+        </tbody>
+      </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>requires account</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#requiresAccount">https://w3id.org/apn#requiresAccount</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates if the application requires the creation of an account to use
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#Application">Application</a></td></tr>
+        <tr><th>Range:</th> <td><a href="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a>
+        </tbody>
+      </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>size in MB</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#sizeInMB">https://w3id.org/apn#sizeInMB</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates the size of the application in megabytes
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#Application">Application</a></td></tr>
+        <tr><th>Range:</th> <td><a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a>
+        </tbody>
+      </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>stars</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#stars">https://w3id.org/apn#stars</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates the mean number of stars given by the users to the application
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#Application">Application</a></td></tr>
+        <tr><th>Range:</th> <td><a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a>
+        </tbody>
+      </table>
     </section>
     <section id="urgency">
       <h3 id="x3-3-3-urgency">
@@ -1109,9 +1211,9 @@
         <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x3-3-3-urgency"></a>
       </h3>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>Urgency</td></tr>
+        <tbody><tr><th>Label:</th> <td>Urgency</td></tr>
           <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Urgency">https://w3id.org/apn#Urgency</a></td></tr>
-          <tr><th>Description:</th> 
+          <tr><th>Definition:</th> 
             <td>
               The urgency of the notification - if it contains information that is only relevant for a certain period of time and becomes redundant 
               if that period of time passes (for example, a notification about Friday night is irrelevant if delivered on Saturday morning).
@@ -1131,9 +1233,9 @@
         </tbody>
       </table>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>is time sensitive</td></tr>
+        <tbody><tr><th>Label:</th> <td>is time sensitive</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#isTimeSensitive">https://w3id.org/apn#isTimeSensitive</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Indicates weather the notification is urgent, i.e. time-sensitive, or not.
           </td>
@@ -1143,9 +1245,9 @@
         </tbody>
       </table>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>remains relevant</td></tr>
+        <tbody><tr><th>Label:</th> <td>remains relevant</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#remainsRelevant">https://w3id.org/apn#remainsRelevant</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Indicates the urgency of the notification - the period of time when the notification remains relevant for the user
           </td>
@@ -1161,9 +1263,9 @@
         <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x3-3-4-cta"></a>
       </h3>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>Call-To-Action</td></tr>
+        <tbody><tr><th>Label:</th> <td>Call-To-Action</td></tr>
           <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CallToAction">https://w3id.org/apn#CallToAction</a></td></tr>
-          <tr><th>Description:</th> 
+          <tr><th>Definition:</th> 
             <td>
               The call-to-action of the notification - for example, "Anne sent you a message on App X" is encouraging the user to interact 
               with the app to communicate with other people.
@@ -1184,6 +1286,18 @@
           </td></tr>
         </tbody>
       </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>has call-to-action</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#hasCTA">https://w3id.org/apn#hasCTA</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates the call to action of the notification
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#PushNotification">PushNotification</a></td></tr>
+        <tr><th>Range:</th> <td><a href="https://w3id.org/apn#CallToAction">CallToAction</a></td></tr>
+        </tbody>
+      </table>
     </section>
     <section id="personalisation">
       <h3 id="x3-3-5-personalisation">
@@ -1191,9 +1305,9 @@
         <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x3-3-5-personalisation"></a>
       </h3>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>Personalisation</td></tr>
+        <tbody><tr><th>Label:</th> <td>Personalisation</td></tr>
           <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Personalisation">https://w3id.org/apn#Personalisation</a></td></tr>
-          <tr><th>Description:</th> 
+          <tr><th>Definition:</th> 
             <td>
               Indicates personal information that can be derived or inferred from the notification.
             </td>
@@ -1216,6 +1330,18 @@
           </td></tr>
         </tbody>
       </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>can be used to infer</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#canBeUsedToInfer">https://w3id.org/apn#canBeUsedToInfer</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates the type of personal data that can be inferred from the notification.
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#PushNotification">PushNotification</a></td></tr>
+        <tr><th>Range:</th> <td><a href="https://w3id.org/apn#Personalisation">Personalisation</a></td></tr>
+        </tbody>
+      </table>
     </section>
     <section id="audience">
       <h3 id="x3-3-6-audience">
@@ -1223,9 +1349,9 @@
         <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x3-3-6-audience"></a>
       </h3>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>Target Audience</td></tr>
+        <tbody><tr><th>Label:</th> <td>Target Audience</td></tr>
           <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#TargetAudience">https://w3id.org/apn#TargetAudience</a></td></tr>
-          <tr><th>Description:</th> 
+          <tr><th>Definition:</th> 
             <td>
               Indicates the audience being targeted by the notification, based on their behavior or other demographic, geographic or psychographic characteristics.
             </td>
@@ -1238,6 +1364,18 @@
           </td></tr>
         </tbody>
       </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>has target audience</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#hasTargetAudience">https://w3id.org/apn#hasTargetAudience</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates the target audience of the notification
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#PushNotification">PushNotification</a></td></tr>
+        <tr><th>Range:</th> <td><a href="https://w3id.org/apn#TargetAudience">TargetAudience</a></td></tr>
+        </tbody>
+      </table>
     </section>
     <section id="audience">
       <h3 id="x3-3-7-campaign">
@@ -1245,9 +1383,9 @@
         <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x3-3-7-campaign"></a>
       </h3>
       <table class="def propdef">
-        <tbody><tr><th>Definition:</th> <td>Campaign Type</td></tr>
+        <tbody><tr><th>Label:</th> <td>Campaign Type</td></tr>
           <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CampaignType">https://w3id.org/apn#CampaignType</a></td></tr>
-          <tr><th>Description:</th> 
+          <tr><th>Definition:</th> 
             <td>
               Indicates the campaign type of the notification, based on the marketing strategy followed by a company to keeps its brand's visibility, 
               i.e., to mantain and increase the number of notification subscribers.
@@ -1265,6 +1403,18 @@
             <a href="https://w3id.org/apn#Reengagement">Re-engagement</a>,
             <a href="https://w3id.org/apn#Social">Social</a>
           </td></tr>
+        </tbody>
+      </table>
+      <table class="def propdef">
+        <tbody><tr><th>Label:</th> <td>has campaign type</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#hasCampaignType">https://w3id.org/apn#hasCampaignType</a></td></tr>
+        <tr><th>Definition:</th> 
+          <td>
+            Indicates the campaign type of the notification
+          </td>
+        </tr>
+        <tr><th>Domain:</th> <td><a href="https://w3id.org/apn#PushNotification">PushNotification</a></td></tr>
+        <tr><th>Range:</th> <td><a href="https://w3id.org/apn#CampaignType">CampaignType</a></td></tr>
         </tbody>
       </table>
     </section>
@@ -1311,9 +1461,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x4-1-next-minutes"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Next Minutes</td></tr>
+      <tbody><tr><th>Label:</th> <td>Next Minutes</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#NextMinutes">https://w3id.org/apn#NextMinutes</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The notification will only be relevant for the next few minutes.
           </td>
@@ -1326,9 +1476,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x4-2-next-hours"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Next Hours</td></tr>
+      <tbody><tr><th>Label:</th> <td>Next Hours</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#NextHours">https://w3id.org/apn#NextHours</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The notification will be relevant for the next few hours.
           </td>
@@ -1341,9 +1491,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x4-3-next-days"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Next Days</td></tr>
+      <tbody><tr><th>Label:</th> <td>Next Days</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#NextDays">https://w3id.org/apn#NextDays</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The notification will be relevant for the next few days.
           </td>
@@ -1356,9 +1506,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x4-4-next-weeks"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Next Weeks</td></tr>
+      <tbody><tr><th>Label:</th> <td>Next Weeks</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#NextWeeks">https://w3id.org/apn#NextWeeks</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The notification will be relevant for the next few weeks.
           </td>
@@ -1371,9 +1521,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x4-5-next-months"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Next Months</td></tr>
+      <tbody><tr><th>Label:</th> <td>Next Months</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#NextMonths">https://w3id.org/apn#NextMonths</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The notification will be relevant for the next few months.
           </td>
@@ -1386,9 +1536,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x4-6-next-years"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Next Years</td></tr>
+      <tbody><tr><th>Label:</th> <td>Next Years</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#NextYears">https://w3id.org/apn#NextYears</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The notification will be relevant for the next few years.
           </td>
@@ -1401,9 +1551,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x4-7-holidays"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Holidays</td></tr>
+      <tbody><tr><th>Label:</th> <td>Holidays</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Holidays">https://w3id.org/apn#Holidays</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The notification will be relevant in the time leading up to a holiday (Christmas, Halloween, Mother's Day, ...).
           </td>
@@ -1416,9 +1566,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x4-8-seasons"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Seasons</td></tr>
+      <tbody><tr><th>Label:</th> <td>Seasons</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Seasons">https://w3id.org/apn#Seasons</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The notification will only be relevant in certain seasons (summer, winter, ...).
           </td>
@@ -1431,9 +1581,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x4-9-unclear"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Unclear</td></tr>
+      <tbody><tr><th>Label:</th> <td>Unclear</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Unclear">https://w3id.org/apn#Unclear</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The notification conveys some urgency (for example using words like "now" or "hurry up"), but from the content 
             of the notification, it is not possible to identify how long it will remain relevant.
@@ -1480,9 +1630,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-1-account-management"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Account Management</td></tr>
+      <tbody><tr><th>Label:</th> <td>Account Management</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#AccountManagement">https://w3id.org/apn#AccountManagement</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Notifications that encourage subscribers to create and/or log into an account to take advantage of a certain feature.
           </td>
@@ -1495,9 +1645,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-2-awareness"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Awareness</td></tr>
+      <tbody><tr><th>Label:</th> <td>Awareness</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Awareness">https://w3id.org/apn#Awareness</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             The notification makes subscribers aware of information that does not need further investigation by the subscriber, e.g., 
             a new feature, upcoming holiday, weather, stock price, score in a match, etc.
@@ -1511,9 +1661,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-3-claim"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Claim</td></tr>
+      <tbody><tr><th>Label:</th> <td>Claim</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Claim">https://w3id.org/apn#Claim</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Notifications that encourage the subscribers to click and claim some prize or reward from the application.
           </td>
@@ -1526,9 +1676,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-4-discover"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Discover</td></tr>
+      <tbody><tr><th>Label:</th> <td>Discover</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Discover">https://w3id.org/apn#Discover</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Notifications that tease the content of the information itself to generate curiosity on the users and lead them to engage with the app.
           </td>
@@ -1541,9 +1691,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-5-download"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Download</td></tr>
+      <tbody><tr><th>Label:</th> <td>Download</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Download">https://w3id.org/apn#Download</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Notifications to get the subscriber to download some asset.
           </td>
@@ -1556,9 +1706,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-6-feedback"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Feedback</td></tr>
+      <tbody><tr><th>Label:</th> <td>Feedback</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Feedback">https://w3id.org/apn#Feedback</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Notifications to get the subscriber to provide some form of feedback or response, for instance on the app's functionalities.
           </td>
@@ -1571,9 +1721,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-7-play"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Play</td></tr>
+      <tbody><tr><th>Label:</th> <td>Play</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Play">https://w3id.org/apn#Play</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Notifications related with gaming apps, where the subscriber is encouraged to re-engage with the game.
           </td>
@@ -1586,9 +1736,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-8-purchase"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Purchase</td></tr>
+      <tbody><tr><th>Label:</th> <td>Purchase</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Purchase">https://w3id.org/apn#Purchase</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Notifications to get the subscriber to purchase a product or service.
           </td>
@@ -1601,9 +1751,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-9-reminder"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Reminder</td></tr>
+      <tbody><tr><th>Label:</th> <td>Reminder</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Reminder">https://w3id.org/apn#Reminder</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Notifications that serve as a reminder or alert to the users or provide advice / tips.
           </td>
@@ -1616,9 +1766,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-10-social"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Social</td></tr>
+      <tbody><tr><th>Label:</th> <td>Social</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Social">https://w3id.org/apn#Social</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Notifications that encourage the subscriber to engage with social tools e.g. share, like, comment, reply.
           </td>
@@ -1631,9 +1781,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x5-11-watch"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Watch</td></tr>
+      <tbody><tr><th>Label:</th> <td>Watch</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Watch">https://w3id.org/apn#Watch</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Notifications that encourage the user to watch some content on the application.
           </td>
@@ -1680,9 +1830,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-1-age"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Age</td></tr>
+      <tbody><tr><th>Label:</th> <td>Age</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#Age">http://www.w3.org/ns/dpv#Age</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about age.
           </td>
@@ -1695,9 +1845,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-2-authenticating"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Authenticating</td></tr>
+      <tbody><tr><th>Label:</th> <td>Authenticating</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#Authenticating">http://www.w3.org/ns/dpv#Authenticating</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about authentication and information used for authenticating.
           </td>
@@ -1710,9 +1860,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-3-browsing"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Browsing Behavior</td></tr>
+      <tbody><tr><th>Label:</th> <td>Browsing Behavior</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#BrowsingBehavior">http://www.w3.org/ns/dpv#BrowsingBehavior</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about browsing behavior.
           </td>
@@ -1725,9 +1875,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-4-device"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Device Based</td></tr>
+      <tbody><tr><th>Label:</th> <td>Device Based</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#DeviceBased">http://www.w3.org/ns/dpv#DeviceBased</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about the device, including type of device, operation system, software, applications, ...
           </td>
@@ -1740,9 +1890,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-5-ethnic"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Ethnic Origin</td></tr>
+      <tbody><tr><th>Label:</th> <td>Ethnic Origin</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#EthnicOrigin">http://www.w3.org/ns/dpv#EthnicOrigin</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about ethnic origin.
           </td>
@@ -1755,9 +1905,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-6-family"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Family Structure</td></tr>
+      <tbody><tr><th>Label:</th> <td>Family Structure</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#FamilyStructure">http://www.w3.org/ns/dpv#FamilyStructure</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about family and familial structure, including marital status, parenting, pregnancies, ...
           </td>
@@ -1770,9 +1920,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-7-location"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Location</td></tr>
+      <tbody><tr><th>Label:</th> <td>Location</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#Location">http://www.w3.org/ns/dpv#Location</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about location, including city, region, country, GPS coordinates, ...
           </td>
@@ -1785,9 +1935,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-8-medical"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Medical Health</td></tr>
+      <tbody><tr><th>Label:</th> <td>Medical Health</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#MedicalHealth">http://www.w3.org/ns/dpv#MedicalHealth</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about physical or mental health, medical conditions or healthcare.
           </td>
@@ -1800,9 +1950,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-9-political"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Political Affiliation</td></tr>
+      <tbody><tr><th>Label:</th> <td>Political Affiliation</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#PoliticalAffiliation">http://www.w3.org/ns/dpv#PoliticalAffiliation</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about political affiliations or preferences.
           </td>
@@ -1815,9 +1965,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-10-interest"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Interest</td></tr>
+      <tbody><tr><th>Label:</th> <td>Interest</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#Interest">http://www.w3.org/ns/dpv#Interest</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about specific interests, personal favorites, likes and dislikes, including sports, music, ...
           </td>
@@ -1830,9 +1980,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-11-motivation"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>PersonalMotivations</td></tr>
+      <tbody><tr><th>Label:</th> <td>PersonalMotivations</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#PersonalMotivations">https://w3id.org/apn#PersonalMotivations</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about personal motivations.
           </td>
@@ -1845,9 +1995,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-12-professional"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Professional</td></tr>
+      <tbody><tr><th>Label:</th> <td>Professional</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#Professional">http://www.w3.org/ns/dpv#Professional</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about educational or professional career, including employment history and job preferences.
           </td>
@@ -1860,9 +2010,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-13-purchases"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Purchases and Spending Habit</td></tr>
+      <tbody><tr><th>Label:</th> <td>Purchases and Spending Habit</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#PurchasesAndSpendingHabit">http://www.w3.org/ns/dpv#PurchasesAndSpendingHabit</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about purchases made and money spent expressed as a habit.
           </td>
@@ -1875,9 +2025,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x6-14-social"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Social Network</td></tr>
+      <tbody><tr><th>Label:</th> <td>Social Network</td></tr>
         <tr><th>IRI:</th> <td><a href="http://www.w3.org/ns/dpv#SocialNetwork">http://www.w3.org/ns/dpv#SocialNetwork</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Information about friends or connections.
           </td>
@@ -1922,9 +2072,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-1-behavior"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Behavior</td></tr>
+      <tbody><tr><th>Label:</th> <td>Behavior</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Behavior">https://w3id.org/apn#Behavior</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their behavior, purchase intent and interaction with certain online services or products.
           </td>
@@ -1944,9 +2094,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-1-1-engagement"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Engagement</td></tr>
+      <tbody><tr><th>Label:</th> <td>Engagement</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Engagement">https://w3id.org/apn#Engagement</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their engagement with the app, e.g., they have liked a video, followed another user, started a game.
           </td>
@@ -1959,9 +2109,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-1-2-loyalty"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Loyalty</td></tr>
+      <tbody><tr><th>Label:</th> <td>Loyalty</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Loyalty">https://w3id.org/apn#Loyalty</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting a segment of users who are particularly loyal, e.g., daily recurrent users.
           </td>
@@ -1974,9 +2124,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-1-3-occasion"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Occasion</td></tr>
+      <tbody><tr><th>Label:</th> <td>Occasion</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Occasion">https://w3id.org/apn#Occasion</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users who have engaged with or expressed interest in rare events, e.g., previously purchased during a holiday.
           </td>
@@ -1989,9 +2139,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-1-4-product"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Product</td></tr>
+      <tbody><tr><th>Label:</th> <td>Product</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Product">https://w3id.org/apn#Product</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users who have engaged with or expressed interest in a specific product, e.g., you will love the new X product just launched.
           </td>
@@ -2004,9 +2154,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-1-5-purchasing-reason"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Purchasing Reason</td></tr>
+      <tbody><tr><th>Label:</th> <td>Purchasing Reason</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#PurchasingReason">https://w3id.org/apn#PurchasingReason</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users who have previously purchased or require a reason, incentive or nudge to purchase, 
             e.g., you previously bought X, we recommend Y; 30% sale on now.
@@ -2020,9 +2170,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-2-demographic"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Demographic</td></tr>
+      <tbody><tr><th>Label:</th> <td>Demographic</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Demographic">https://w3id.org/apn#Demographic</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on quantifiable characteristics such as family status or job experience.
           </td>
@@ -2041,9 +2191,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-2-1-family-status"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Family Status</td></tr>
+      <tbody><tr><th>Label:</th> <td>Family Status</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#FamilyStatus">https://w3id.org/apn#FamilyStatus</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their family status, e.g., new parents, pregnancies.
           </td>
@@ -2056,9 +2206,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-2-2-health"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Health</td></tr>
+      <tbody><tr><th>Label:</th> <td>Health</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Health">https://w3id.org/apn#Health</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their health status.
           </td>
@@ -2071,9 +2221,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-2-3-job"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Job</td></tr>
+      <tbody><tr><th>Label:</th> <td>Job</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Job">https://w3id.org/apn#Job</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their job type / professional activities.
           </td>
@@ -2086,9 +2236,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-2-4-residence"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Residence</td></tr>
+      <tbody><tr><th>Label:</th> <td>Residence</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Residence">https://w3id.org/apn#Residence</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their type of residence, e.g., their house contains a garden.
           </td>
@@ -2101,9 +2251,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-3-geographic"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Geographic</td></tr>
+      <tbody><tr><th>Label:</th> <td>Geographic</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Geographic">https://w3id.org/apn#Geographic</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their geographic whereabouts.
           </td>
@@ -2120,9 +2270,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-3-1-country"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Country</td></tr>
+      <tbody><tr><th>Label:</th> <td>Country</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Country">https://w3id.org/apn#Country</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their country of residence.
           </td>
@@ -2135,9 +2285,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-3-2-region"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Region</td></tr>
+      <tbody><tr><th>Label:</th> <td>Region</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Region">https://w3id.org/apn#Region</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their geographic region, i.e., a location within a country.
           </td>
@@ -2150,9 +2300,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-4-psychographic"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Psychographic</td></tr>
+      <tbody><tr><th>Label:</th> <td>Psychographic</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Psychographic">https://w3id.org/apn#Psychographic</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their interests, personal motivations or lifestyle.
           </td>
@@ -2170,9 +2320,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-4-1-interest"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Interest</td></tr>
+      <tbody><tr><th>Label:</th> <td>Interest</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Interest">https://w3id.org/apn#Interest</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users who have a particular interest, e.g., football goal updates indicates an interest in sports
             and a new recipe an interest in cooking.
@@ -2214,9 +2364,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-4-2-lifestyle"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Lifestyle</td></tr>
+      <tbody><tr><th>Label:</th> <td>Lifestyle</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Lifestyle">https://w3id.org/apn#Lifestyle</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their particular lifestyle, e.g., vegan products, a person who runs or works out.
           </td>
@@ -2229,9 +2379,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x7-4-3-motivation"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Motivation</td></tr>
+      <tbody><tr><th>Label:</th> <td>Motivation</td></tr>
         <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Motivation">https://w3id.org/apn#Motivation</a></td></tr>
-        <tr><th>Description:</th> 
+        <tr><th>Definition:</th> 
           <td>
             Targeting users based on their aspirations or motivations, e.g., find a new job, get fitter, learn a new skill.
           </td>
@@ -2278,9 +2428,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-1-awareness"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Awareness</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Awareness">https://w3id.org/apn#Awareness</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Awareness</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_Awareness">https://w3id.org/apn#CT_Awareness</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign to promote general awareness of a topic.
           </td>
@@ -2293,9 +2443,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-2-breaking"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Breaking Content</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#BreakingContent">https://w3id.org/apn#BreakingContent</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Breaking Content</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_BreakingContent">https://w3id.org/apn#CT_BreakingContent</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign to promote new content that has just been created.
           </td>
@@ -2308,9 +2458,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-3-help"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Help & Feedback & Tips</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#HelpFeedbackTips">https://w3id.org/apn#HelpFeedbackTips</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Help & Feedback & Tips</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_HelpFeedbackTips">https://w3id.org/apn#CT_HelpFeedbackTips</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign to get help or tips and to provide feedback.
           </td>
@@ -2323,9 +2473,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-4-loyalty"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Loyalty</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Loyalty">https://w3id.org/apn#Loyalty</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Loyalty</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_Loyalty">https://w3id.org/apn#CT_Loyalty</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign directed at loyal / returning / engaged users or customers.
           </td>
@@ -2338,9 +2488,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-5-newsletter"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Newsletter</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Newsletter">https://w3id.org/apn#Newsletter</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Newsletter</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_Newsletter">https://w3id.org/apn#CT_Newsletter</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             Informative campaign containing "things of interest" to the user.
           </td>
@@ -2353,9 +2503,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-6-onboarding"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Onboarding</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Onboarding">https://w3id.org/apn#Onboarding</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Onboarding</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_Onboarding">https://w3id.org/apn#CT_Onboarding</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign to induct users with a product/service, to acquaint them with features available or account management.
           </td>
@@ -2368,9 +2518,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-7-product"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Product</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Product">https://w3id.org/apn#Product</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Product</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_Product">https://w3id.org/apn#CT_Product</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign to promote a particular product/feature.
           </td>
@@ -2383,17 +2533,17 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-8-promotional"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Promotional</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Promotional">https://w3id.org/apn#Promotional</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Promotional</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_Promotional">https://w3id.org/apn#CT_Promotional</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign based on promotional offers for the users.
           </td>
         </tr>
         <tr><th>Superclass Of:</th> <td>
-          <a href="https://w3id.org/apn#PromotionalGeneral">PromotionalGeneral</a>, 
-          <a href="https://w3id.org/apn#PromotionalFlash">PromotionalFlash</a>,
-          <a href="https://w3id.org/apn#PromotionalRare">PromotionalRare</a>
+          <a href="https://w3id.org/apn#CT_PromotionalGeneral">CT_PromotionalGeneral</a>, 
+          <a href="https://w3id.org/apn#CT_PromotionalFlash">CT_PromotionalFlash</a>,
+          <a href="https://w3id.org/apn#CT_PromotionalRare">CT_PromotionalRare</a>
         </td></tr>
       </tbody>
     </table>
@@ -2403,9 +2553,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-8-1-general"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Promotional - General</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#PromotionalGeneral">https://w3id.org/apn#PromotionalGeneral</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Promotional - General</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_PromotionalGeneral">https://w3id.org/apn#CT_PromotionalGeneral</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign to promote general offers for the users.
           </td>
@@ -2418,9 +2568,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-8-2-flash"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Promotional - Flash</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#PromotionalFlash">https://w3id.org/apn#PromotionalFlash</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Promotional - Flash</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_PromotionalFlash">https://w3id.org/apn#CT_PromotionalFlash</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign to promote flash sale offers, i.e., they have some time limit associated.
           </td>
@@ -2433,9 +2583,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-8-3-rare"></a>
     </h4>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Promotional - Rare</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#PromotionalRare">https://w3id.org/apn#PromotionalRare</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Promotional - Rare</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_PromotionalRare">https://w3id.org/apn#CT_PromotionalRare</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign to promote a service / product associated with particular seasons and / or holidays/events.
           </td>
@@ -2448,9 +2598,9 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-9-reengagement"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Re-engagement</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Reengagement">https://w3id.org/apn#Reengagement</a></td></tr>
-        <tr><th>Description:</th> 
+      <tbody><tr><th>Label:</th> <td>Re-engagement</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_Reengagement">https://w3id.org/apn#CT_Reengagement</a></td></tr>
+        <tr><th>Definition:</th> 
           <td>
             A campaign enticing users / customers to re-engage with the service.
           </td>
@@ -2463,8 +2613,8 @@
       <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x8-10-social"></a>
     </h3>
     <table class="def propdef">
-      <tbody><tr><th>Definition:</th> <td>Social</td></tr>
-        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#Social">https://w3id.org/apn#Social</a></td></tr>
+      <tbody><tr><th>Label:</th> <td>Social</td></tr>
+        <tr><th>IRI:</th> <td><a href="https://w3id.org/apn#CT_Social">https://w3id.org/apn#CT_Social</a></td></tr>
         <tr><th>Description:</th> 
           <td>
             A campaign based on or associated with social tools, social media or influencers.
@@ -2490,47 +2640,47 @@
       <p>
         Example of Discover CTA notification:
       </p>
-      <code>
-        :ex1 a apn:PushNotification ;<br>
-        <span class="tab">apn:hasCTA apn:Discover ;</span><br>
-        <span class="tab">apn:notificationID "1642770111733" ;</span><br>
-        <span class="tab">apn:notificationText "Your Daily Pick is ready! 🥰The elephant in the room is that daily life and trauma can be reasons our sexual feelings fall flat Today's selection takes a therapeutic approach to how to bring the glow back" ;</span><br>
-        <span class="tab">apn:pushedBy :app_Blinkist ;</span><br>
-        <span class="tab">apn:pushedOn "2022-01-21 13:01:52"^^xsd:datetime .</span>
-      </code>
+      <pre class="prettyprint">
+        :ex1 a apn:PushNotification ;
+            apn:hasCTA apn:Discover ;
+            apn:notificationID "1642770111733" ;
+            apn:notificationText "Your Daily Pick is ready! 🥰The elephant in the room is that daily life and trauma can be reasons our sexual feelings fall flat Today's selection takes a therapeutic approach to how to bring the glow back" ;
+            apn:pushedBy :app_Blinkist ;
+            apn:pushedOn "2022-01-21 13:01:52"^^xsd:datetime .
+      </pre>
       <p>
         Example of Purchase CTA notification:
       </p>
-      <code>
-        :ex2 a apn:PushNotification ;<br>
-        <span class="tab">apn:hasCTA apn:Purchase ;</span><br>
-        <span class="tab">apn:notificationID "1642768061452" ;</span><br>
-        <span class="tab">apn:notificationText "TOP UP ON SPANISH SUN Save up to £310* on getaways to Spain" ;</span><br>
-        <span class="tab">apn:pushedBy :app_TUI ;</span><br>
-        <span class="tab">apn:pushedOn "2022-01-21 12:27:41"^^xsd:datetime .</span>
-      </code>
+      <pre class="prettyprint">
+        :ex2 a apn:PushNotification ;
+            apn:hasCTA apn:Purchase ;
+            apn:notificationID "1642768061452" ;
+            apn:notificationText "TOP UP ON SPANISH SUN Save up to £310* on getaways to Spain" ;
+            apn:pushedBy :app_TUI ;
+            apn:pushedOn "2022-01-21 12:27:41"^^xsd:datetime .
+      </pre>
       <p>
         Example of Social CTA notification:
       </p>
-      <code>
-        :ex3 a apn:PushNotification ;<br>
-        <span class="tab">apn:hasCTA apn:Social ;</span><br>
-        <span class="tab">apn:notificationID "1627563462874" ;</span><br>
-        <span class="tab">apn:notificationText "LinkedIn You have 4 messages and 6 notifications waiting for you on LinkedIn" ;</span><br>
-        <span class="tab">apn:pushedBy :app_LinkedIn ;</span><br>
-        <span class="tab">apn:pushedOn "2021-07-29 12:57:43"^^xsd:datetime .</span>
-      </code>
+      <pre class="prettyprint">
+        :ex3 a apn:PushNotification ;
+            apn:hasCTA apn:Social ;
+            apn:notificationID "1627563462874" ;
+            apn:notificationText "LinkedIn You have 4 messages and 6 notifications waiting for you on LinkedIn" ;
+            apn:pushedBy :app_LinkedIn ;
+            apn:pushedOn "2021-07-29 12:57:43"^^xsd:datetime .
+      </pre>
       <p>
         Example of Reminder CTA notification:
       </p>
-      <code>
-        :ex4 a apn:PushNotification ;<br>
-        <span class="tab">apn:hasCTA apn:Reminder ;</span><br>
-        <span class="tab">apn:notificationID "1641515153599" ;</span><br>
-        <span class="tab">apn:notificationText "Light and houseplants 🪴 Check your natural light to see if houseplants have enough ☀️" ;</span><br>
-        <span class="tab">apn:pushedBy :app_Blossom ;</span><br>
-        <span class="tab">apn:pushedOn "2022-01-07 00:25:54"^^xsd:datetime .</span>
-      </code>
+      <pre class="prettyprint">
+        :ex4 a apn:PushNotification ;
+            apn:hasCTA apn:Reminder ;
+            apn:notificationID "1641515153599" ;
+            apn:notificationText "Light and houseplants 🪴 Check your natural light to see if houseplants have enough ☀️" ;
+            apn:pushedBy :app_Blossom ;
+            apn:pushedOn "2022-01-07 00:25:54"^^xsd:datetime .
+      </pre>
     </div>
   </section>
 
@@ -2589,6 +2739,15 @@
       </a>. Dan Brickley; Ramanathan Guha.  W3C. 25 February 2014. W3C Recommendation. URL: 
       <a href="https://www.w3.org/TR/rdf-schema/">
         https://www.w3.org/TR/rdf-schema/
+      </a>
+    </dd>
+    <dt id="bib-skos">[skos]</dt>
+    <dd>
+      <a href="https://www.w3.org/TR/skos-reference/">
+        <cite>SKOS Simple Knowledge Organization System Reference</cite>
+      </a>. Alistair Miles; Sean Bechhofer. W3C. 18 August 2009. W3C Recommendation. URL: 
+      <a href="https://www.w3.org/TR/skos-reference/">
+        https://www.w3.org/TR/skos-reference/
       </a>
     </dd>
     <dt id="bib-vann">[vann]</dt>
