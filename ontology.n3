@@ -20,6 +20,7 @@
 <http://www.w3.org/ns/dpv#SocialNetwork> rdfs:subClassOf <https://w3id.org/apn/Personalisation> .
 <https://w3id.org/apn/>
   a owl:Ontology ;
+  dc11:creator "Beatriz Esteves", "Kieran Fraser", "Shridhar Kulkarni" ;
   dc11:issued "2022-02-16"^^xsd:date ;
   dc11:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
   dc11:title "Ontology for the Annotation of Push-Notifications" ;

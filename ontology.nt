@@ -12,6 +12,9 @@
 <http://www.w3.org/ns/dpv#PurchasesAndSpendingHabit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
 <http://www.w3.org/ns/dpv#SocialNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Personalisation> .
 <https://w3id.org/apn/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/creator> "Beatriz Esteves" .
+<https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/creator> "Kieran Fraser" .
+<https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/creator> "Shridhar Kulkarni" .
 <https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/issued> "2022-02-16"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
 <https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/title> "Ontology for the Annotation of Push-Notifications" .

@@ -59,6 +59,9 @@
   </rdf:Description>
 
   <owl:Ontology rdf:about="https://w3id.org/apn/">
+    <dc11:creator>Beatriz Esteves</dc11:creator>
+    <dc11:creator>Kieran Fraser</dc11:creator>
+    <dc11:creator>Shridhar Kulkarni</dc11:creator>
     <dc11:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-16</dc11:issued>
     <dc11:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
     <dc11:title>Ontology for the Annotation of Push-Notifications</dc11:title>
