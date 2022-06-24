@@ -3,6 +3,7 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:dc="http://purl.org/dc/terms/"
          xmlns:ns0="http://purl.org/vocab/vann/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
@@ -62,11 +63,13 @@
     <dc11:creator>Beatriz Esteves</dc11:creator>
     <dc11:creator>Kieran Fraser</dc11:creator>
     <dc11:creator>Shridhar Kulkarni</dc11:creator>
-    <dc11:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-16</dc11:issued>
-    <dc11:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-16</dc:created>
+    <dc:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
     <dc11:title>Ontology for the Annotation of Push-Notifications</dc11:title>
-    <ns0:preferredNamespacePrefix>apn:</ns0:preferredNamespacePrefix>
-    <owl:versionInfo>0.1</owl:versionInfo>
+    <ns0:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apn:</ns0:preferredNamespacePrefix>
+    <ns0:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/apn/</ns0:preferredNamespaceUri>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-24</dc:modified>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2</owl:versionInfo>
   </owl:Ontology>
 
   <owl:Class rdf:about="https://w3id.org/apn/AccountManagement">
@@ -266,9 +269,9 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/ApplicationType"/>
   </owl:Class>
 
-  <owl:Class rdf:about="https://w3id.org/apn/Holidays">
-    <rdfs:label>Holidays</rdfs:label>
-    <skos:definition xml:lang="en">The notification will be relevant in the time leading up to a holiday (Christmas, Halloween, Mother's Day, ...).</skos:definition>
+  <owl:Class rdf:about="https://w3id.org/apn/HolidayDuration">
+    <rdfs:label>Duration of holiday</rdfs:label>
+    <skos:definition xml:lang="en">The notification is likely only relevant leading up to, during or just after a holiday period (e.g. Christmas, Father's Day, International Earth Day, World Radio Day, International Women's Day etc.)</skos:definition>
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Urgency"/>
   </owl:Class>
 
@@ -328,39 +331,27 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/ApplicationType"/>
   </owl:Class>
 
-  <owl:Class rdf:about="https://w3id.org/apn/NextDays">
-    <rdfs:label>Next Days</rdfs:label>
-    <skos:definition xml:lang="en">The notification will be relevant for the next few days.</skos:definition>
+  <owl:Class rdf:about="https://w3id.org/apn/Days">
+    <rdfs:label>Days</rdfs:label>
+    <skos:definition xml:lang="en">The notification is likely only relevant within a number of days within the next week.</skos:definition>
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Urgency"/>
   </owl:Class>
 
-  <owl:Class rdf:about="https://w3id.org/apn/NextHours">
-    <rdfs:label>Next Hours</rdfs:label>
-    <skos:definition xml:lang="en">The notification will be relevant for the next few hours.</skos:definition>
+  <owl:Class rdf:about="https://w3id.org/apn/Hours">
+    <rdfs:label>Hours</rdfs:label>
+    <skos:definition xml:lang="en">The notification is likely only relevant within a number of hours in the current day.</skos:definition>
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Urgency"/>
   </owl:Class>
 
-  <owl:Class rdf:about="https://w3id.org/apn/NextMinutes">
-    <rdfs:label>Next Minutes</rdfs:label>
-    <skos:definition xml:lang="en">The notification will only be relevant for the next few minutes.</skos:definition>
+  <owl:Class rdf:about="https://w3id.org/apn/Minutes">
+    <rdfs:label>Minutes</rdfs:label>
+    <skos:definition xml:lang="en">The notification is likely only relevant within a number of minutes in the current hour.</skos:definition>
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Urgency"/>
   </owl:Class>
 
-  <owl:Class rdf:about="https://w3id.org/apn/NextMonths">
-    <rdfs:label>Next Months</rdfs:label>
-    <skos:definition xml:lang="en">The notification will be relevant for the next few months.</skos:definition>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Urgency"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/apn/NextWeeks">
-    <rdfs:label>Next Weeks</rdfs:label>
-    <skos:definition xml:lang="en">The notification will be relevant for the next few weeks.</skos:definition>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Urgency"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/apn/NextYears">
-    <rdfs:label>Next Years</rdfs:label>
-    <skos:definition xml:lang="en">The notification will be relevant for the next few years.</skos:definition>
+  <owl:Class rdf:about="https://w3id.org/apn/Weeks">
+    <rdfs:label>Weeks</rdfs:label>
+    <skos:definition xml:lang="en">The notification is likely only relevant within a number of weeks.</skos:definition>
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Urgency"/>
   </owl:Class>
 
@@ -428,9 +419,9 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Demographic"/>
   </owl:Class>
 
-  <owl:Class rdf:about="https://w3id.org/apn/Seasons">
-    <rdfs:label>Seasons</rdfs:label>
-    <skos:definition xml:lang="en">The notification will only be relevant in certain seasons (summer, winter, ...).</skos:definition>
+  <owl:Class rdf:about="https://w3id.org/apn/SeasonDuration">
+    <rdfs:label>Duration of season</rdfs:label>
+    <skos:definition xml:lang="en">The notification is likely only relevant during a season e.g. Winter, Summer, Autumn, Spring.</skos:definition>
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Urgency"/>
   </owl:Class>
 
@@ -461,9 +452,15 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/ApplicationType"/>
   </owl:Class>
 
-  <owl:Class rdf:about="https://w3id.org/apn/Unclear">
-    <rdfs:label>Unclear</rdfs:label>
-    <skos:definition xml:lang="en">The notification conveys some urgency (for example using words like 'now' or 'hurry up'), but from the content of the notification, it is not possible to identify how long it will remain relevant.</skos:definition>
+  <owl:Class rdf:about="https://w3id.org/apn/Indefinitely">
+    <rdfs:label>Indefinitely into the future</rdfs:label>
+    <skos:definition xml:lang="en">The notification is likely to remain relevant indefinitely into the future. It could relevant for months, years or an indefinite amount of time! Only select this category if the notification is not applicable to any of the other categories.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Urgency"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/apn/UntilActionTaken">
+    <rdfs:label>Until action taken</rdfs:label>
+    <skos:definition xml:lang="en">The notification is likely only relevant until some action has occurred which makes it no longer relevant or redundant (e.g. a notification asking the user to sign-in is only relevant until the user has signed in. Similarly, a notification which asks the user to claim their reward is only relevant until they have claimed their reward).</skos:definition>
     <rdfs:subClassOf rdf:resource="https://w3id.org/apn/Urgency"/>
   </owl:Class>
 

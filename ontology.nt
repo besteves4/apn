@@ -15,11 +15,13 @@
 <https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/creator> "Beatriz Esteves" .
 <https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/creator> "Kieran Fraser" .
 <https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/creator> "Shridhar Kulkarni" .
-<https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/issued> "2022-02-16"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<https://w3id.org/apn/> <http://purl.org/dc/terms/created> "2022-02-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/apn/> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
 <https://w3id.org/apn/> <http://purl.org/dc/elements/1.1/title> "Ontology for the Annotation of Push-Notifications" .
-<https://w3id.org/apn/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "apn:" .
-<https://w3id.org/apn/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+<https://w3id.org/apn/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "apn:"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/apn/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/apn/"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/apn/> <http://purl.org/dc/terms/modified> "2022-06-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/apn/> <http://www.w3.org/2002/07/owl#versionInfo> "0.2"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/apn/AccountManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/apn/AccountManagement> <http://www.w3.org/2000/01/rdf-schema#label> "Account Management" .
 <https://w3id.org/apn/AccountManagement> <http://www.w3.org/2004/02/skos/core#definition> "Notifications that encourage subscribers to create and/or log into an account to take advantage of a certain feature."@en .
@@ -147,10 +149,10 @@
 <https://w3id.org/apn/HealthAndFitness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/apn/HealthAndFitness> <http://www.w3.org/2000/01/rdf-schema#label> "Health And Fitness" .
 <https://w3id.org/apn/HealthAndFitness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
-<https://w3id.org/apn/Holidays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/apn/Holidays> <http://www.w3.org/2000/01/rdf-schema#label> "Holidays" .
-<https://w3id.org/apn/Holidays> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant in the time leading up to a holiday (Christmas, Halloween, Mother's Day, ...)."@en .
-<https://w3id.org/apn/Holidays> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/HolidayDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/HolidayDuration> <http://www.w3.org/2000/01/rdf-schema#label> "Duration of holiday" .
+<https://w3id.org/apn/HolidayDuration> <http://www.w3.org/2004/02/skos/core#definition> "The notification is likely only relevant leading up to, during or just after a holiday period (e.g. Christmas, Father's Day, International Earth Day, World Radio Day, International Women's Day etc.)"@en .
+<https://w3id.org/apn/HolidayDuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
 <https://w3id.org/apn/Interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/apn/Interest> <http://www.w3.org/2000/01/rdf-schema#label> "Interest" .
 <https://w3id.org/apn/Interest> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their interests, personal motivations or lifestyle."@en .
@@ -187,30 +189,22 @@
 <https://w3id.org/apn/NewsAndMagazines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/apn/NewsAndMagazines> <http://www.w3.org/2000/01/rdf-schema#label> "News And Magazines" .
 <https://w3id.org/apn/NewsAndMagazines> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
-<https://w3id.org/apn/NextDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/apn/NextDays> <http://www.w3.org/2000/01/rdf-schema#label> "Next Days" .
-<https://w3id.org/apn/NextDays> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant for the next few days."@en .
-<https://w3id.org/apn/NextDays> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
-<https://w3id.org/apn/NextHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/apn/NextHours> <http://www.w3.org/2000/01/rdf-schema#label> "Next Hours" .
-<https://w3id.org/apn/NextHours> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant for the next few hours."@en .
-<https://w3id.org/apn/NextHours> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
-<https://w3id.org/apn/NextMinutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/apn/NextMinutes> <http://www.w3.org/2000/01/rdf-schema#label> "Next Minutes" .
-<https://w3id.org/apn/NextMinutes> <http://www.w3.org/2004/02/skos/core#definition> "The notification will only be relevant for the next few minutes."@en .
-<https://w3id.org/apn/NextMinutes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
-<https://w3id.org/apn/NextMonths> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/apn/NextMonths> <http://www.w3.org/2000/01/rdf-schema#label> "Next Months" .
-<https://w3id.org/apn/NextMonths> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant for the next few months."@en .
-<https://w3id.org/apn/NextMonths> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
-<https://w3id.org/apn/NextWeeks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/apn/NextWeeks> <http://www.w3.org/2000/01/rdf-schema#label> "Next Weeks" .
-<https://w3id.org/apn/NextWeeks> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant for the next few weeks."@en .
-<https://w3id.org/apn/NextWeeks> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
-<https://w3id.org/apn/NextYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/apn/NextYears> <http://www.w3.org/2000/01/rdf-schema#label> "Next Years" .
-<https://w3id.org/apn/NextYears> <http://www.w3.org/2004/02/skos/core#definition> "The notification will be relevant for the next few years."@en .
-<https://w3id.org/apn/NextYears> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/Days> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Days> <http://www.w3.org/2000/01/rdf-schema#label> "Days" .
+<https://w3id.org/apn/Days> <http://www.w3.org/2004/02/skos/core#definition> "The notification is likely only relevant within a number of days within the next week."@en .
+<https://w3id.org/apn/Days> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/Hours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Hours> <http://www.w3.org/2000/01/rdf-schema#label> "Hours" .
+<https://w3id.org/apn/Hours> <http://www.w3.org/2004/02/skos/core#definition> "The notification is likely only relevant within a number of hours in the current day."@en .
+<https://w3id.org/apn/Hours> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/Minutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Minutes> <http://www.w3.org/2000/01/rdf-schema#label> "Minutes" .
+<https://w3id.org/apn/Minutes> <http://www.w3.org/2004/02/skos/core#definition> "The notification is likely only relevant within a number of minutes in the current hour."@en .
+<https://w3id.org/apn/Minutes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/Weeks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Weeks> <http://www.w3.org/2000/01/rdf-schema#label> "Weeks" .
+<https://w3id.org/apn/Weeks> <http://www.w3.org/2004/02/skos/core#definition> "The notification is likely only relevant within a number of weeks."@en .
+<https://w3id.org/apn/Weeks> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
 <https://w3id.org/apn/Occasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/apn/Occasion> <http://www.w3.org/2000/01/rdf-schema#label> "Occasion" .
 <https://w3id.org/apn/Occasion> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users who have engaged with or expressed interest in rare events, e.g., previously purchased during a holiday."@en .
@@ -253,10 +247,10 @@
 <https://w3id.org/apn/Residence> <http://www.w3.org/2000/01/rdf-schema#label> "Residence" .
 <https://w3id.org/apn/Residence> <http://www.w3.org/2004/02/skos/core#definition> "Targeting users based on their type of residence, e.g., their house contains a garden."@en .
 <https://w3id.org/apn/Residence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Demographic> .
-<https://w3id.org/apn/Seasons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/apn/Seasons> <http://www.w3.org/2000/01/rdf-schema#label> "Seasons" .
-<https://w3id.org/apn/Seasons> <http://www.w3.org/2004/02/skos/core#definition> "The notification will only be relevant in certain seasons (summer, winter, ...)."@en .
-<https://w3id.org/apn/Seasons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/SeasonDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/SeasonDuration> <http://www.w3.org/2000/01/rdf-schema#label> "Duration of season" .
+<https://w3id.org/apn/SeasonDuration> <http://www.w3.org/2004/02/skos/core#definition> "The notification is likely only relevant during a season e.g. Winter, Summer, Autumn, Spring."@en .
+<https://w3id.org/apn/SeasonDuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
 <https://w3id.org/apn/Shopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/apn/Shopping> <http://www.w3.org/2000/01/rdf-schema#label> "Shopping" .
 <https://w3id.org/apn/Shopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
@@ -274,10 +268,14 @@
 <https://w3id.org/apn/TravelAndLocal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/apn/TravelAndLocal> <http://www.w3.org/2000/01/rdf-schema#label> "Travel And Local" .
 <https://w3id.org/apn/TravelAndLocal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
-<https://w3id.org/apn/Unclear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/apn/Unclear> <http://www.w3.org/2000/01/rdf-schema#label> "Unclear" .
-<https://w3id.org/apn/Unclear> <http://www.w3.org/2004/02/skos/core#definition> "The notification conveys some urgency (for example using words like 'now' or 'hurry up'), but from the content of the notification, it is not possible to identify how long it will remain relevant."@en .
-<https://w3id.org/apn/Unclear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/Indefinitely> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/Indefinitely> <http://www.w3.org/2000/01/rdf-schema#label> "Indefinitely into the future" .
+<https://w3id.org/apn/Indefinitely> <http://www.w3.org/2004/02/skos/core#definition> "The notification is likely to remain relevant indefinitely into the future. It could relevant for months, years or an indefinite amount of time! Only select this category if the notification is not applicable to any of the other categories."@en .
+<https://w3id.org/apn/Indefinitely> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
+<https://w3id.org/apn/UntilActionTaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/apn/UntilActionTaken> <http://www.w3.org/2000/01/rdf-schema#label> "Until action taken" .
+<https://w3id.org/apn/UntilActionTaken> <http://www.w3.org/2004/02/skos/core#definition> "The notification is likely only relevant until some action has occurred which makes it no longer relevant or redundant (e.g. a notification asking the user to sign-in is only relevant until the user has signed in. Similarly, a notification which asks the user to claim their reward is only relevant until they have claimed their reward)."@en .
+<https://w3id.org/apn/UntilActionTaken> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/Urgency> .
 <https://w3id.org/apn/VideoPlayersAndEditors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/apn/VideoPlayersAndEditors> <http://www.w3.org/2000/01/rdf-schema#label> "Video Players And Editors" .
 <https://w3id.org/apn/VideoPlayersAndEditors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/apn/ApplicationType> .
