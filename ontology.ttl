@@ -1,6 +1,5 @@
 @prefix apn: <https://w3id.org/apn/> .
-@prefix dce: <http://purl.org/dc/elements/1.1/> .
-@prefix dct: <http://purl.org/dc/terms> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dpv: <http://www.w3.org/ns/dpv#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -35,14 +34,12 @@ dpv:PurchasesAndSpendingHabit rdfs:subClassOf apn:Personalisation .
 dpv:SocialNetwork rdfs:subClassOf apn:Personalisation .
 
 apn: a owl:Ontology ;
-    dce:creator "Beatriz Esteves", "Kieran Fraser", "Shridhar Kulkarni" ;
-    dct:created "2022-02-16"^^xsd:date ;
-    dct:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
-    dce:title "Ontology for the Annotation of Push-Notifications" ;
-    vann:preferredNamespacePrefix "apn:"^^xsd:string ;
-    vann:preferredNamespaceUri "https://w3id.org/apn/"^^xsd:string ;
-    dct:modified "2022-06-24"^^xsd:date ;
-    owl:versionInfo "0.2"^^xsd:string .
+    dc:creator "Beatriz Esteves", "Kieran Fraser", "Shridhar Kulkarni" ;
+    dc:issued "2022-02-16"^^xsd:date ;
+    dc:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    dc:title "Ontology for the Annotation of Push-Notifications" ;
+    vann:preferredNamespacePrefix "apn:" ;
+    owl:versionInfo "0.1" .
 
 apn:AccountManagement a owl:Class ;
     rdfs:label "Account Management" ;
@@ -206,9 +203,9 @@ apn:HealthAndFitness a owl:Class ;
     rdfs:label "Health And Fitness" ;
     rdfs:subClassOf apn:ApplicationType .
 
-apn:HolidayDuration a owl:Class ;
-    rdfs:label "Duration of holiday" ;
-    skos:definition "The notification is likely only relevant leading up to, during or just after a holiday period (e.g. Christmas, Father's Day, International Earth Day, World Radio Day, International Women's Day etc.)"@en ;
+apn:Holidays a owl:Class ;
+    rdfs:label "Holidays" ;
+    skos:definition "The notification will be relevant in the time leading up to a holiday (Christmas, Halloween, Mother's Day, ...)."@en ;
     rdfs:subClassOf apn:Urgency .
 
 apn:Interest a owl:Class ;
@@ -257,24 +254,34 @@ apn:NewsAndMagazines a owl:Class ;
     rdfs:label "News And Magazines" ;
     rdfs:subClassOf apn:ApplicationType .
 
-apn:Days a owl:Class ;
-    rdfs:label "Days" ;
-    skos:definition "The notification is likely only relevant within a number of days within the next week."@en ;
+apn:NextDays a owl:Class ;
+    rdfs:label "Next Days" ;
+    skos:definition "The notification will be relevant for the next few days."@en ;
     rdfs:subClassOf apn:Urgency .
 
-apn:Hours a owl:Class ;
-    rdfs:label "Hours" ;
-    skos:definition "The notification is likely only relevant within a number of hours in the current day."@en ;
+apn:NextHours a owl:Class ;
+    rdfs:label "Next Hours" ;
+    skos:definition "The notification will be relevant for the next few hours."@en ;
     rdfs:subClassOf apn:Urgency .
 
-apn:Minutes a owl:Class ;
-    rdfs:label "Minutes" ;
-    skos:definition "The notification is likely only relevant within a number of minutes in the current hour."@en ;
+apn:NextMinutes a owl:Class ;
+    rdfs:label "Next Minutes" ;
+    skos:definition "The notification will only be relevant for the next few minutes."@en ;
     rdfs:subClassOf apn:Urgency .
 
-apn:Weeks a owl:Class ;
-    rdfs:label "Weeks" ;
-    skos:definition "The notification is likely only relevant within a number of weeks."@en ;
+apn:NextMonths a owl:Class ;
+    rdfs:label "Next Months" ;
+    skos:definition "The notification will be relevant for the next few months."@en ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:NextWeeks a owl:Class ;
+    rdfs:label "Next Weeks" ;
+    skos:definition "The notification will be relevant for the next few weeks."@en ;
+    rdfs:subClassOf apn:Urgency .
+
+apn:NextYears a owl:Class ;
+    rdfs:label "Next Years" ;
+    skos:definition "The notification will be relevant for the next few years."@en ;
     rdfs:subClassOf apn:Urgency .
 
 apn:Occasion a owl:Class ;
@@ -330,9 +337,9 @@ apn:Residence a owl:Class ;
     skos:definition "Targeting users based on their type of residence, e.g., their house contains a garden."@en ;
     rdfs:subClassOf apn:Demographic .
 
-apn:SeasonDuration a owl:Class ;
-    rdfs:label "Duration of season" ;
-    skos:definition "The notification is likely only relevant during a season e.g. Winter, Summer, Autumn, Spring."@en ;
+apn:Seasons a owl:Class ;
+    rdfs:label "Seasons" ;
+    skos:definition "The notification will only be relevant in certain seasons (summer, winter, ...)."@en ;
     rdfs:subClassOf apn:Urgency .
 
 apn:Shopping a owl:Class ;
@@ -357,14 +364,9 @@ apn:TravelAndLocal a owl:Class ;
     rdfs:label "Travel And Local" ;
     rdfs:subClassOf apn:ApplicationType .
 
-apn:Indefinitely a owl:Class ;
-    rdfs:label "Indefinitely into the future" ;
-    skos:definition "The notification is likely to remain relevant indefinitely into the future. It could relevant for months, years or an indefinite amount of time! Only select this category if the notification is not applicable to any of the other categories."@en ;
-    rdfs:subClassOf apn:Urgency .
-
-apn:UntilActionTaken a owl:Class ;
-    rdfs:label "Until action taken" ;
-    skos:definition "The notification is likely only relevant until some action has occurred which makes it no longer relevant or redundant (e.g. a notification asking the user to sign-in is only relevant until the user has signed in. Similarly, a notification which asks the user to claim their reward is only relevant until they have claimed their reward)."@en ;
+apn:Unclear a owl:Class ;
+    rdfs:label "Unclear" ;
+    skos:definition "The notification conveys some urgency (for example using words like 'now' or 'hurry up'), but from the content of the notification, it is not possible to identify how long it will remain relevant."@en ;
     rdfs:subClassOf apn:Urgency .
 
 apn:VideoPlayersAndEditors a owl:Class ;
