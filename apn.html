@@ -235,7 +235,7 @@
     <dl>
       <dt>Latest editor's draft:</dt>
       <dd>
-        <a href="https://w3id.org/apn/">https://w3id.org/apn/</a>
+        <a href="https://w3id.org/apn">https://w3id.org/apn</a>
       </dd>
       <dt>Editors:</dt>
       <dd class="p-author h-card vcard">
@@ -290,7 +290,7 @@
       <dt>Cite as:</dt>
       <dd>
         Ontology for the Annotation of Push-Notifications (APN) Version 0.2. Edited by Beatriz Esteves, Kieran Fraser, and Shridhar Kulkarni. 24 June 2022. 
-        <a href="https://w3id.org/apn/" target="_blank">https://w3id.org/apn/</a>.
+        <a href="https://w3id.org/apn" target="_blank">https://w3id.org/apn</a>.
       </dd>
     </dl>
     <hr title="Separator for header">
@@ -771,6 +771,18 @@
         <a class="tocxref" href="https://protect.oeg.fi.upm.es/apn/apn.html#x9-examples">
           <bdi class="secno">9. </bdi>Examples
         </a>
+        <ol class="toc">
+          <li class="tocline">
+            <a class="tocxref" href="https://protect.oeg.fi.upm.es/apn/apn.html#x9-1-examples-cta">
+              <bdi class="secno">9.1 </bdi>Examples of Annotated CTAs
+            </a>
+          </li>
+          <li class="tocline">
+            <a class="tocxref" href="https://protect.oeg.fi.upm.es/apn/apn.html#x9-2-urgency-cta">
+              <bdi class="secno">9.2 </bdi>Examples of Urgency-annotated notifications 
+            </a>
+          </li>
+        </ol>
       </li>
       <li class="tocline">
         <a class="tocxref" href="https://protect.oeg.fi.upm.es/apn/apn.html#references">
@@ -797,7 +809,8 @@
         the 
         <a href="https://protect-network.eu/" target="_blank">
           Marie Skłodowska-Curie grant agreement No 813497 (PROTECT)
-        </a>.
+        </a> 
+        as well as with the financial support of Enterprise Ireland, the ERDF under Ireland’s European Structural and Investment Funds Programme 2014-2020 and Science Foundation Ireland under Grant Agreement No. 13/RC/2106_P2 at the ADAPT SFI Research Centre at Trinity College Dublin.
       </p>
   </section>
 
@@ -955,7 +968,7 @@
               </tr>
               <tr>
                 <td>apn</td>
-                <td>https://w3id.org/apn/</td>
+                <td>https://w3id.org/apn#</td>
                 <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-apn" title="Ontology for the Annotation of Push-Notifications">apn</a></cite>]</td>
               </tr>
               <tr>
@@ -1002,6 +1015,11 @@
                 <td>xsd</td>
                 <td>http://www.w3.org/2001/XMLSchema#</td>
                 <td>[<cite><a class="bibref" data-link-type="biblio" href="https://protect.oeg.fi.upm.es/apn/apn.html#bib-xsd" title="XML Schema">xsd</a></cite>]</td>
+              </tr>
+              <tr>
+                <td>ex</td>
+                <td>http://example.com#</td>
+                <td></td>
               </tr>
             </tbody>
           </table>
@@ -2641,45 +2659,90 @@
         Example of Discover CTA notification:
       </p>
       <pre class="prettyprint">
-        :ex1 a apn:PushNotification ;
+        ex:ex1 a apn:PushNotification ;
             apn:hasCTA apn:Discover ;
             apn:notificationID "1642770111733" ;
             apn:notificationText "Your Daily Pick is ready! 🥰The elephant in the room is that daily life and trauma can be reasons our sexual feelings fall flat Today's selection takes a therapeutic approach to how to bring the glow back" ;
-            apn:pushedBy :app_Blinkist ;
+            apn:pushedBy ex:app_Blinkist ;
             apn:pushedOn "2022-01-21 13:01:52"^^xsd:datetime .
       </pre>
       <p>
         Example of Purchase CTA notification:
       </p>
       <pre class="prettyprint">
-        :ex2 a apn:PushNotification ;
+        ex:ex2 a apn:PushNotification ;
             apn:hasCTA apn:Purchase ;
             apn:notificationID "1642768061452" ;
             apn:notificationText "TOP UP ON SPANISH SUN Save up to £310* on getaways to Spain" ;
-            apn:pushedBy :app_TUI ;
+            apn:pushedBy ex:app_TUI ;
             apn:pushedOn "2022-01-21 12:27:41"^^xsd:datetime .
       </pre>
       <p>
         Example of Social CTA notification:
       </p>
       <pre class="prettyprint">
-        :ex3 a apn:PushNotification ;
+        ex:ex3 a apn:PushNotification ;
             apn:hasCTA apn:Social ;
             apn:notificationID "1627563462874" ;
             apn:notificationText "LinkedIn You have 4 messages and 6 notifications waiting for you on LinkedIn" ;
-            apn:pushedBy :app_LinkedIn ;
+            apn:pushedBy ex:app_LinkedIn ;
             apn:pushedOn "2021-07-29 12:57:43"^^xsd:datetime .
       </pre>
       <p>
         Example of Reminder CTA notification:
       </p>
       <pre class="prettyprint">
-        :ex4 a apn:PushNotification ;
+        ex:ex4 a apn:PushNotification ;
             apn:hasCTA apn:Reminder ;
             apn:notificationID "1641515153599" ;
             apn:notificationText "Light and houseplants 🪴 Check your natural light to see if houseplants have enough ☀️" ;
-            apn:pushedBy :app_Blossom ;
+            apn:pushedBy ex:app_Blossom ;
             apn:pushedOn "2022-01-07 00:25:54"^^xsd:datetime .
+      </pre>
+    </div>
+    <h3 id="x9-2-urgency-cta">
+      <bdi class="secno">9.2 </bdi>Examples of Urgency-annotated notifications
+      <a class="self-link respec-offending-element" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#styles" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document"></a>
+      <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/apn/apn.html#x9-2-urgency-cta"></a>
+    </h3>
+    <div>
+      <p>
+        Example of a push-notification that will remain relevant for a number of minutes:
+      </p>
+      <pre class="prettyprint">
+        ex:ex5 a apn:PushNotification ;
+            apn:remainsRelevant apn:Minutes ;
+            apn:notificationID "1645239602628"^^xsd:integer ;
+            apn:notificationText "Look who is chatting now! Right here on OmeTV!"^^xsd:string ;
+            apn:pushedBy ex:app_OmeTV ;
+            apn:pushedOn "2022-02-19 03:00:03"^^xsd:datetime .
+
+        ex:app_OmeTV a apn:Application ;
+            apn:appName "OmeTV" ;
+            apn:numberOfDownloads "10000000"^^xsd:integer ;
+            apn:numberOfReviews "355190"^^xsd:integer ;
+            apn:sizeInMB "34.0"^^xsd:float ;
+            apn:stars "3.9"^^xsd:float ;
+            apn:hasAppType apn:SocialType .
+      </pre>
+      <p>
+        Example of a push-notification that will remain relevant until the subscriber uses the application:
+      </p>
+      <pre class="prettyprint">
+        ex:ex6 a apn:PushNotification ;
+            apn:remainsRelevant apn:UntilActionTaken ;
+            apn:notificationID "1651104005399"^^xsd:integer ;
+            apn:notificationText "Stretching Exercises. It's time for exercise, let's get started!"^^xsd:string ;
+            apn:pushedBy ex:app_StretchingExercises ;
+            apn:pushedOn "2022-04-28 00:00:05"^^xsd:datetime .
+
+        ex:app_StretchingExercises a apn:Application ;
+            apn:appName "Stretching Exercises" ;
+            apn:numberOfDownloads "10000000"^^xsd:integer ;
+            apn:numberOfReviews "89389"^^xsd:integer ;
+            apn:sizeInMB "17.0"^^xsd:float ;
+            apn:stars "4.7"^^xsd:float ;
+            apn:hasAppType apn:HealthAndFitnessType .
       </pre>
     </div>
   </section>
@@ -2690,10 +2753,10 @@
     <dt id="bib-apn">[apn]</dt>
     <dd>
       <a href="https://w3id.org/apn/">
-        <cite>Ontology for the Annotation of Push-Notifications</cite>
-      </a>. 2022. URL: 
-      <a href="https://w3id.org/apn/">
-        https://w3id.org/apn/
+        <cite>Ontology for the Annotation of Push-Notifications (APN) Version 0.2</cite>
+      </a>. Edited by Beatriz Esteves, Kieran Fraser, and Shridhar Kulkarni. 24 June 2022. URL:
+      <a href="https://w3id.org/apn">
+        https://w3id.org/apn
       </a>
     </dd>
     <dt id="bib-dpv">[dpv]</dt>
